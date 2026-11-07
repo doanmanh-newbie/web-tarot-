@@ -1,0 +1,22 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+
+# Bí mật - KHÔNG ĐƯỢC COMMIT
+.env
+*.env.local
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store

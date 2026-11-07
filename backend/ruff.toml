@@ -1,0 +1,13 @@
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I", "B"]
+
+[lint.flake8-bugbear]
+# FastAPI dùng Depends(...) làm giá trị mặc định tham số, đây là cách dùng chuẩn
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query", "fastapi.Header"]
+
+[lint.per-file-ignores]
+# System prompt là văn xuôi dài, không nên cắt dòng tùy tiện
+"app/modules/readings/infrastructure/ai/prompt_builder.py" = ["E501"]

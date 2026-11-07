@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "one-card",
+    "name": "Một lá",
+    "description": "Một thông điệp ngắn gọn cho câu hỏi hoặc cho ngày hôm nay.",
+    "positions": [
+      {
+        "label": "Thông điệp",
+        "description": "Lời nhắn chính dành cho câu hỏi."
+      }
+    ]
+  },
+  {
+    "slug": "past-present-future",
+    "name": "Quá khứ - Hiện tại - Tương lai",
+    "description": "Nhìn một tình huống theo dòng thời gian.",
+    "positions": [
+      {
+        "label": "Quá khứ",
+        "description": "Điều đã ảnh hưởng đến tình huống hiện tại."
+      },
+      {
+        "label": "Hiện tại",
+        "description": "Tình trạng đang diễn ra ngay lúc này."
+      },
+      {
+        "label": "Tương lai",
+        "description": "Xu hướng có thể xảy ra nếu mọi thứ tiếp diễn như hiện tại."
+      }
+    ]
+  },
+  {
+    "slug": "five-card-situation",
+    "name": "Năm lá - Phân tích tình huống",
+    "description": "Đi sâu vào một vấn đề: hiện trạng, thử thách, gốc rễ, lời khuyên và kết quả tiềm năng.",
+    "positions": [
+      {
+        "label": "Hiện tại",
+        "description": "Bức tranh tổng quát của tình huống."
+      },
+      {
+        "label": "Thách thức",
+        "description": "Điều đang cản trở hoặc cần được đối mặt."
+      },
+      {
+        "label": "Gốc rễ",
+        "description": "Nguyên nhân sâu xa hoặc nền tảng của vấn đề."
+      },
+      {
+        "label": "Lời khuyên",
+        "description": "Hướng hành động nên cân nhắc."
+      },
+      {
+        "label": "Kết quả tiềm năng",
+        "description": "Hướng phát triển có thể xảy ra nếu làm theo lời khuyên."
+      }
+    ]
+  }
+]
