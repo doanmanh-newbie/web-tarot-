@@ -1,51 +1,50 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { setAuthToken, setUnauthorizedHandler } from "../api/client.js";
+import { login as apiLogin, register } from "../api/auth.js";
 
 const AuthContext = createContext(null);
-const KEY = "tarot_auth";
 
-function loadSaved() {
+// Không có màn đăng nhập: frontend tự đăng nhập bằng tài khoản demo cấu hình trong .env
+const DEMO_EMAIL = import.meta.env.VITE_DEMO_EMAIL ?? "demo@tarot.local";
+const DEMO_PASSWORD = import.meta.env.VITE_DEMO_PASSWORD ?? "demo-tarot-2026";
+
+async function demoLogin() {
   try {
-    const saved = JSON.parse(localStorage.getItem(KEY));
-    if (saved?.token) {
-      setAuthToken(saved.token);
-      return saved.user;
-    }
-  } catch {
-    /* localStorage bị chặn: bỏ qua, đăng nhập lại */
+    return await apiLogin(DEMO_EMAIL, DEMO_PASSWORD);
+  } catch (err) {
+    if (err.status !== 401) throw err;
+    // Lần đầu chạy: tài khoản demo chưa có thì tạo rồi đăng nhập lại
+    await register(DEMO_EMAIL, DEMO_PASSWORD).catch((e) => {
+      if (e.status !== 409) throw e;
+    });
+    return apiLogin(DEMO_EMAIL, DEMO_PASSWORD);
   }
-  return null;
 }
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(loadSaved); // { id, email, role }
+  const [user, setUser] = useState(null); // { id, email, role }
+  const [error, setError] = useState("");
 
-  const login = (token, userInfo) => {
-    setAuthToken(token);
-    setUser(userInfo);
-    try {
-      localStorage.setItem(KEY, JSON.stringify({ token, user: userInfo }));
-    } catch {
-      /* ignore */
-    }
-  };
-  const logout = () => {
-    setAuthToken(null);
+  const connect = useCallback(() => {
+    setError("");
     setUser(null);
-    try {
-      localStorage.removeItem(KEY);
-    } catch {
-      /* ignore */
-    }
-  };
-
-  // Token hết hạn/không hợp lệ: đăng xuất, ProtectedRoute sẽ đưa về /login
-  useEffect(() => {
-    setUnauthorizedHandler(logout);
-    return () => setUnauthorizedHandler(null);
+    setAuthToken(null);
+    demoLogin()
+      .then((res) => {
+        setAuthToken(res.access_token);
+        setUser(res.user);
+      })
+      .catch((err) => setError(err.message));
   }, []);
 
-  return <AuthContext.Provider value={{ user, login, logout }}>{children}</AuthContext.Provider>;
+  useEffect(() => {
+    connect();
+    // Token hết hạn (401): đăng nhập ngầm lại
+    setUnauthorizedHandler(connect);
+    return () => setUnauthorizedHandler(null);
+  }, [connect]);
+
+  return <AuthContext.Provider value={{ user, error, retry: connect }}>{children}</AuthContext.Provider>;
 }
 
 export const useAuth = () => useContext(AuthContext);

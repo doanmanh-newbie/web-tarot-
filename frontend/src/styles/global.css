@@ -96,11 +96,6 @@ label { display: block; margin-bottom: 14px; font-size: 0.92rem; color: var(--mu
 .nav-user { display: flex; align-items: center; gap: 12px; }
 
 /* Auth */
-.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 16px; }
-.auth-form { width: 100%; max-width: 380px; padding: 28px; text-align: left; }
-.auth-form h1 { text-align: center; }
-.auth-form > p.muted { text-align: center; margin-top: 0; }
-.auth-form .btn { width: 100%; margin-top: 4px; }
 
 /* Loading */
 .loading { text-align: center; padding: 48px 0; }

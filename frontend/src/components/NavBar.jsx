@@ -1,9 +1,8 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
 
 export default function NavBar() {
-  const { user, logout } = useAuth();
-  const navigate = useNavigate();
+  const { user } = useAuth();
   return (
     <header className="navbar">
       <NavLink to="/" className="brand">✦ Tarot</NavLink>
@@ -14,7 +13,6 @@ export default function NavBar() {
       </nav>
       <div className="nav-user">
         <span className="muted">{user.email}</span>
-        <button className="btn-ghost" onClick={() => { logout(); navigate("/login"); }}>Đăng xuất</button>
       </div>
     </header>
   );
