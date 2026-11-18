@@ -27,3 +27,5 @@ dist/
 *.jpg
 image frame/
 image tarot/
+prototype/
+.claude/
