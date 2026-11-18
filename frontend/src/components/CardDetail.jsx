@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { getDeck } from "../api/cards.js";
 
 // three.js chỉ tải khi mở chi tiết, trang lướt bài vẫn nhẹ
 const CardModel3D = lazy(() => import("./CardModel3D.jsx"));
@@ -7,11 +8,51 @@ const CardModel3D = lazy(() => import("./CardModel3D.jsx"));
 const SUIT_VI = { wands: "Bộ Gậy", cups: "Bộ Cốc", swords: "Bộ Kiếm", pentacles: "Bộ Tiền" };
 const arcanaLabel = (c) =>
   c.arcana === "major" ? `Ẩn Chính · ${c.number}` : c.suit ? `${SUIT_VI[c.suit]} · ${c.number}` : "";
+export const YES_NO_VI = { yes: "Có", no: "Không", maybe: "Có thể" };
+const TOPICS = [
+  ["love", "Tình cảm"],
+  ["career", "Công việc"],
+  ["finance", "Tài chính"],
+  ["health", "Sức khỏe"],
+];
+const TABS = ["Tổng quan", "Chủ đề", "Lời khuyên"];
+
+// Lá trong lần bốc chỉ có tóm tắt (không có details): lấy bản đầy đủ từ cả bộ
+function useFullCard(card) {
+  const [full, setFull] = useState(card.details ? card : null);
+  useEffect(() => {
+    if (card.details) return setFull(card);
+    setFull(null);
+    let alive = true;
+    getDeck()
+      .then((all) => alive && setFull(all.find((c) => c.slug === card.slug) ?? null))
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [card]);
+  return full;
+}
+
+// Xuôi + ngược, hoặc chỉ chiều vừa bốc
+function Both({ pair, only }) {
+  if (only) return <p>{pair[only]}</p>;
+  return (
+    <>
+      <p><span className="dir">Xuôi</span> {pair.upright}</p>
+      <p><span className="dir">Ngược</span> {pair.reversed}</p>
+    </>
+  );
+}
 
 // Lớp xem chi tiết: lá bay từ hàng ra giữa (layoutId), rồi thay bằng mô hình 3D kéo xoay được.
 // drawn: { is_reversed, meaning, position_label } khi xem lá vừa bốc; không có thì hiện cả nghĩa xuôi & ngược.
-export default function CardDetail({ card, drawn, layoutId, liked, onToggleLike, onClose }) {
+// onPrev/onNext: chuyển sang lá trước/sau mà không đóng lớp chi tiết (trang lướt bài)
+export default function CardDetail({ card, drawn, layoutId, liked, onToggleLike, onPrev, onNext, onClose }) {
   const [ready, setReady] = useState(false);
+  const [tab, setTab] = useState(0);
+  const full = useFullCard(card);
+  const d = full?.details;
   const controls = useRef(null);
   const closeRef = useRef(null);
   const onCloseRef = useRef(onClose);
@@ -25,6 +66,9 @@ export default function CardDetail({ card, drawn, layoutId, liked, onToggleLike,
   }, []);
 
   const reversed = !!drawn?.is_reversed;
+  const only = drawn ? (reversed ? "reversed" : "upright") : null;
+
+  useEffect(() => setReady(false), [card.slug]);
 
   return (
     <motion.div
@@ -53,7 +97,7 @@ export default function CardDetail({ card, drawn, layoutId, liked, onToggleLike,
             transition={{ opacity: { duration: 0.3 } }}
           />
           <Suspense fallback={null}>
-            <CardModel3D card={card} reversed={reversed} controls={controls} onReady={() => setReady(true)} />
+            <CardModel3D key={card.slug} card={card} reversed={reversed} controls={controls} onReady={() => setReady(true)} />
           </Suspense>
           <p className="stage-hint">Kéo lá để xoay 360°</p>
         </div>
@@ -69,17 +113,56 @@ export default function CardDetail({ card, drawn, layoutId, liked, onToggleLike,
             {card.name_vi} {reversed && <span className="tag">Ngược</span>}
           </h2>
           <p className="muted small">{card.name}</p>
-          <hr className="rule" />
-          {drawn ? (
-            <p>{drawn.meaning}</p>
-          ) : (
-            <>
-              <h3>Xuôi</h3>
-              <p>{card.upright_meaning}</p>
-              <h3>Ngược</h3>
-              <p>{card.reversed_meaning}</p>
-            </>
+          {d && (
+            <ul className="facts">
+              <li>Nguyên tố · {d.element}</li>
+              {d.astrology && <li>Chiêm tinh · {d.astrology}</li>}
+              <li>
+                Yes/No · {only ? YES_NO_VI[d.yes_no[only]] : `${YES_NO_VI[d.yes_no.upright]} / ${YES_NO_VI[d.yes_no.reversed]}`}
+              </li>
+            </ul>
           )}
+          <hr className="rule" />
+          {d && (
+            <div className="segmented tabs" role="tablist" aria-label="Nội dung lá bài">
+              {TABS.map((t, i) => (
+                <button key={t} role="tab" aria-selected={tab === i} onClick={() => setTab(i)}>{t}</button>
+              ))}
+            </div>
+          )}
+          <div role="tabpanel" className="tab-body">
+            {(!d || tab === 0) && (
+              <>
+                {d && (only ? (
+                  <p className="kw">{d[`keywords_${only}`].map((k) => <span key={k}>{k}</span>)}</p>
+                ) : (
+                  <>
+                    <h3>Từ khóa xuôi</h3>
+                    <p className="kw">{d.keywords_upright.map((k) => <span key={k}>{k}</span>)}</p>
+                    <h3>Từ khóa ngược</h3>
+                    <p className="kw">{d.keywords_reversed.map((k) => <span key={k}>{k}</span>)}</p>
+                  </>
+                ))}
+                <h3>Ý nghĩa</h3>
+                {drawn ? <p>{drawn.meaning}</p> : <Both pair={{ upright: card.upright_meaning, reversed: card.reversed_meaning }} />}
+              </>
+            )}
+            {d && tab === 1 &&
+              TOPICS.map(([key, label]) => (
+                <div key={key}>
+                  <h3>{label}</h3>
+                  <Both pair={d[key]} only={only} />
+                </div>
+              ))}
+            {d && tab === 2 && (
+              <>
+                <h3>Lời khuyên</h3>
+                <p>{d.advice}</p>
+                <h3>Hình ảnh trên lá</h3>
+                <p>{d.imagery}</p>
+              </>
+            )}
+          </div>
           <div className="detail-actions">
             {onToggleLike && (
               <button className={`btn-ghost ${liked ? "liked" : ""}`} onClick={onToggleLike} aria-pressed={!!liked}>
@@ -88,6 +171,12 @@ export default function CardDetail({ card, drawn, layoutId, liked, onToggleLike,
             )}
             <button className="icon-btn" onClick={() => controls.current?.spin(-7)} aria-label="Xoay sang trái">⟲</button>
             <button className="icon-btn" onClick={() => controls.current?.spin(7)} aria-label="Xoay sang phải">⟳</button>
+            {(onPrev || onNext) && (
+              <span className="detail-nav">
+                <button className="icon-btn" onClick={onPrev} disabled={!onPrev} aria-label="Lá trước">‹</button>
+                <button className="icon-btn" onClick={onNext} disabled={!onNext} aria-label="Lá sau">›</button>
+              </span>
+            )}
           </div>
         </motion.div>
       </div>

@@ -346,3 +346,15 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
   html { scroll-behavior: auto; }
   .scroll-cue span { animation: none; }
 }
+
+/* ===== Chi tiết lá: thông tin mở rộng, tab ===== */
+.facts { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.facts li { font-size: 0.78rem; border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; color: var(--muted); }
+.segmented.tabs { margin: 12px 0 4px; }
+.segmented.filters { flex-wrap: wrap; justify-content: center; max-width: calc(100vw - 32px); border-radius: 18px; }
+.tab-body { max-height: 42vh; overflow-y: auto; padding-right: 4px; }
+.kw { display: flex; flex-wrap: wrap; gap: 6px; }
+.kw span { font-size: 0.8rem; background: var(--bg-2); border-radius: 6px; padding: 2px 8px; color: var(--gold); }
+.dir { font-size: 0.72rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.08em; margin-right: 4px; }
+.detail-nav { display: inline-flex; gap: 6px; margin-left: auto; }
+@media (max-width: 700px) { .tab-body { max-height: none; } }

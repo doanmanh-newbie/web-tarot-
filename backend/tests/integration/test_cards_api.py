@@ -78,3 +78,11 @@ def test_normal_user_pages_through_catalog(ctx):
     assert len(first) == 12 and first[0]["slug"] == "the-fool"
     assert len(last) == 6
     assert ctx.client.get("/cards?limit=0", headers=headers).status_code == 422
+
+
+def test_catalog_returns_card_details(ctx):
+    ctx.seed()
+    card = ctx.client.get("/cards?limit=1", headers=ctx.auth_header(Role.USER)).json()[0]
+    d = card["details"]
+    assert d["element"] == "Khí" and d["astrology"] == "Thiên Vương Tinh"
+    assert d["keywords_upright"] and set(d["love"]) == {"upright", "reversed"}

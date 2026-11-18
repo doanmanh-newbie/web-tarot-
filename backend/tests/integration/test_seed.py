@@ -62,3 +62,19 @@ def test_card_ids_follow_file_order_on_fresh_db(ctx):
         first = s.get(CardModel, 1)
         last = s.get(CardModel, 78)
     assert first.slug == "the-fool" and last.slug == "king-of-pentacles"
+
+
+def test_seed_backfills_details_without_touching_admin_edits(ctx):
+    # DB tạo trước khi có cột details: chạy seed thường phải bổ sung details nhưng giữ nghĩa admin đã sửa
+    ctx.seed()
+    with ctx.session_factory() as s:
+        card = s.scalars(select(CardModel).where(CardModel.slug == "the-fool")).one()
+        card.details = None
+        card.upright_meaning = "Admin đã sửa"
+        s.commit()
+    report = ctx.seed()
+    assert report.cards_updated == 1
+    with ctx.session_factory() as s:
+        card = s.scalars(select(CardModel).where(CardModel.slug == "the-fool")).one()
+        assert card.details["yes_no"]["upright"] == "yes"
+        assert card.upright_meaning == "Admin đã sửa"

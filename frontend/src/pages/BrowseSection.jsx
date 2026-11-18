@@ -1,12 +1,21 @@
 import { lazy, Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import { listCatalog } from "../api/cards.js";
+import { getDeck, listCatalog } from "../api/cards.js";
 import CardDetail from "../components/CardDetail.jsx";
 import ErrorMessage from "../components/ErrorMessage.jsx";
 
 const Rail3D = lazy(() => import("../components/Rail3D.jsx"));
 
 const PAGE = 12;
+const FILTERS = [
+  ["all", "Tất cả"],
+  ["major", "Ẩn Chính"],
+  ["wands", "Gậy"],
+  ["cups", "Cốc"],
+  ["swords", "Kiếm"],
+  ["pentacles", "Tiền"],
+  ["liked", "Đã thích"],
+];
 const LIKE_KEY = "tarot_liked";
 const loadLiked = () => {
   try {
@@ -24,8 +33,8 @@ export default function BrowseSection() {
   const [active, setActive] = useState(0);
   const [detail, setDetail] = useState(null);
   const [liked, setLiked] = useState(loadLiked);
-  const [onlyLiked, setOnlyLiked] = useState(false);
-  const [allCards, setAllCards] = useState(null); // cả bộ, chỉ tải khi mở mục "Đã thích"
+  const [filter, setFilter] = useState("all");
+  const [allCards, setAllCards] = useState(null); // cả bộ, chỉ tải khi chọn bộ lọc
   const busy = useRef(false);
   const loaded = useRef(0);
   const rail = useRef(null);
@@ -48,12 +57,19 @@ export default function BrowseSection() {
     if (cards.length === 0) loadMore();
   }, []);
 
-  const showLiked = (on) => {
-    setOnlyLiked(on);
+  const pick = (f) => {
+    setFilter(f);
     setActive(0);
-    if (on && !allCards) listCatalog(78, 0).then(setAllCards).catch((err) => setError(err.message));
+    if (f !== "all" && !allCards) getDeck().then(setAllCards).catch((err) => setError(err.message));
   };
-  const shown = onlyLiked ? (allCards ?? []).filter((c) => liked.has(c.slug)) : cards;
+  const keep = (c) => (filter === "liked" ? liked.has(c.slug) : filter === "major" ? c.arcana === "major" : c.suit === filter);
+  const shown = filter === "all" ? cards : (allCards ?? []).filter(keep);
+  const filtered = filter !== "all";
+  const at = detail ? shown.findIndex((c) => c.slug === detail.slug) : -1;
+  const step = (n) => {
+    setDetail(shown[at + n]);
+    rail.current?.goTo(at + n);
+  };
 
   useEffect(() => {
     if (detail) return;
@@ -85,14 +101,18 @@ export default function BrowseSection() {
       <header className="browse-head">
         <p className="eyebrow">Rider–Waite · 78 lá</p>
         <h2 className="section-title">Bộ bài</h2>
-        <div className="segmented" role="tablist" aria-label="Bộ lọc">
-          <button role="tab" aria-selected={!onlyLiked} onClick={() => showLiked(false)}>Tất cả</button>
-          <button role="tab" aria-selected={onlyLiked} onClick={() => showLiked(true)}>Đã thích · {liked.size}</button>
+        <div className="segmented filters" role="tablist" aria-label="Bộ lọc">
+          {FILTERS.map(([f, label]) => (
+            <button key={f} role="tab" aria-selected={filter === f} onClick={() => pick(f)}>
+              {label}
+              {f === "liked" && ` · ${liked.size}`}
+            </button>
+          ))}
         </div>
       </header>
 
       <div className="rail-stage" aria-label="Hàng lá bài 3D, kéo ngang để lướt">
-        {onlyLiked && allCards && shown.length === 0 ? (
+        {filter === "liked" && allCards && shown.length === 0 ? (
           <div className="empty" role="status">
             <p className="empty-icon">♥</p>
             <p>Chưa có lá nào. Mở chi tiết một lá và bấm “Thích” để lưu vào đây.</p>
@@ -102,12 +122,12 @@ export default function BrowseSection() {
         ) : (
           <Suspense fallback={skeleton}>
             <Rail3D
-              key={onlyLiked ? "liked" : "all"}
+              key={filter}
               items={shown.map((c) => ({ key: c.slug, image_url: c.image_url }))}
               api={rail}
               onActive={setActive}
               onOpen={(i) => setDetail(shown[i])}
-              onNeedMore={onlyLiked ? undefined : loadMore}
+              onNeedMore={filtered ? undefined : loadMore}
             />
           </Suspense>
         )}
@@ -122,7 +142,7 @@ export default function BrowseSection() {
               {current.name_vi} {liked.has(current.slug) && <span className="liked-mark" aria-label="Đã thích">♥</span>}
             </h3>
             <p className="muted small">
-              {current.name} · {active + 1} / {onlyLiked ? shown.length : 78}
+              {current.name} · {active + 1} / {filtered ? shown.length : 78}
             </p>
             <div className="row-center">
               <button className="icon-btn" onClick={() => rail.current?.goTo(active - 1)} aria-label="Lá trước">‹</button>
@@ -140,6 +160,8 @@ export default function BrowseSection() {
             card={detail}
             liked={liked.has(detail.slug)}
             onToggleLike={() => toggleLike(detail.slug)}
+            onPrev={at > 0 ? () => step(-1) : undefined}
+            onNext={at >= 0 && at < shown.length - 1 ? () => step(1) : undefined}
             onClose={() => setDetail(null)}
           />
         )}

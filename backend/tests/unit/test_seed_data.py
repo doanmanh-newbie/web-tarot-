@@ -58,3 +58,21 @@ def test_validator_catches_bad_suit():
     broken = copy.deepcopy(cards)
     broken[30]["suit"] = "coins"
     assert validate_cards(broken)
+
+
+def test_minor_cards_take_element_from_suit():
+    cards, _ = load_data()
+    element = {"wands": "Lửa", "cups": "Nước", "swords": "Khí", "pentacles": "Đất"}
+    assert all(c["details"]["element"] == element[c["suit"]] for c in cards if c["suit"])
+
+
+def test_validator_catches_bad_details():
+    cards, _ = load_data()
+    broken = copy.deepcopy(cards)
+    broken[0]["details"]["yes_no"]["upright"] = "có"
+    del broken[1]["details"]["health"]
+    broken[2]["details"] = None
+    errors = validate_cards(broken)
+    assert any("yes_no" in e for e in errors)
+    assert any("health" in e for e in errors)
+    assert any("thiếu details" in e for e in errors)
