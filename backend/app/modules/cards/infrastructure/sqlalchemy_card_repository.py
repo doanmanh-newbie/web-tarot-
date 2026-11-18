@@ -19,6 +19,7 @@ def _to_entity(m: CardModel) -> Card:
         upright_meaning=m.upright_meaning,
         reversed_meaning=m.reversed_meaning,
         image_url=m.image_url,
+        details=m.details,
     )
 
 

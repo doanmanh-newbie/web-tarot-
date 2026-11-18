@@ -25,8 +25,10 @@ DATA_DIR = Path(__file__).parent / "data"
 SUITS = ("wands", "cups", "swords", "pentacles")
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 CARD_FIELDS = (
-    "name", "name_vi", "arcana", "suit", "number", "upright_meaning", "reversed_meaning", "image_url"
+    "name", "name_vi", "arcana", "suit", "number", "upright_meaning", "reversed_meaning", "image_url", "details"
 )
+TOPICS = ("love", "career", "finance", "health")
+YES_NO = ("yes", "no", "maybe")
 
 
 @dataclass
@@ -68,6 +70,7 @@ def validate_cards(cards: list[dict]) -> list[str]:
         for key in ("name", "name_vi", "upright_meaning", "reversed_meaning"):
             if not str(c.get(key, "")).strip():
                 errors.append(f"[{slug}] thiếu {key}")
+        errors += _validate_details(slug, c.get("details"))
         arcana, suit, number = c.get("arcana"), c.get("suit"), c.get("number")
         if arcana == "major":
             if suit is not None:
@@ -84,6 +87,26 @@ def validate_cards(cards: list[dict]) -> list[str]:
     for suit in SUITS:
         if sorted(groups.get(suit, [])) != list(range(1, 15)):
             errors.append(f"Bộ {suit} phải có đủ số 1-14, mỗi số một lá")
+    return errors
+
+
+def _validate_details(slug: str, d: dict | None) -> list[str]:
+    if not isinstance(d, dict):
+        return [f"[{slug}] thiếu details"]
+    errors = []
+    for key in ("keywords_upright", "keywords_reversed"):
+        if not (isinstance(d.get(key), list) and d[key] and all(str(k).strip() for k in d[key])):
+            errors.append(f"[{slug}] details.{key} phải là danh sách không rỗng")
+    yn = d.get("yes_no") or {}
+    if yn.get("upright") not in YES_NO or yn.get("reversed") not in YES_NO:
+        errors.append(f"[{slug}] details.yes_no phải là yes/no/maybe cho cả xuôi và ngược")
+    for topic in TOPICS:
+        t = d.get(topic) or {}
+        if not (str(t.get("upright", "")).strip() and str(t.get("reversed", "")).strip()):
+            errors.append(f"[{slug}] details.{topic} thiếu nghĩa xuôi hoặc ngược")
+    for key in ("element", "advice", "imagery"):
+        if not str(d.get(key, "")).strip():
+            errors.append(f"[{slug}] thiếu details.{key}")
     return errors
 
 
@@ -129,6 +152,10 @@ def seed_database(session: Session, cards: list[dict], spreads: list[dict], upda
         elif update:
             for key, value in values.items():
                 setattr(row, key, value)
+            report.cards_updated += 1
+        elif row.details is None and data.get("details"):
+            # details không sửa được qua giao diện admin nên bổ sung luôn cho DB cũ, không cần --update
+            row.details = data["details"]
             report.cards_updated += 1
         else:
             report.cards_skipped += 1

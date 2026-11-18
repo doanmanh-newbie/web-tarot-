@@ -1,4 +1,4 @@
-from sqlalchemy import CheckConstraint, Integer, String, Text
+from sqlalchemy import JSON, CheckConstraint, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.shared.infrastructure.db.base import Base
@@ -18,3 +18,4 @@ class CardModel(Base):
     upright_meaning: Mapped[str] = mapped_column(Text)
     reversed_meaning: Mapped[str] = mapped_column(Text)
     image_url: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    details: Mapped[dict | None] = mapped_column(JSON, nullable=True)

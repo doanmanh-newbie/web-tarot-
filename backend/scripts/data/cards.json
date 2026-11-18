@@ -8,7 +8,44 @@
     "number": 0,
     "upright_meaning": "Khởi đầu mới, tự do, dám bước đi mà chưa chắc kết quả; tinh thần phiêu lưu và tin vào hành trình.",
     "reversed_meaning": "Liều lĩnh thiếu suy xét, do dự không dám bắt đầu, hoặc bỏ qua rủi ro hiển nhiên.",
-    "image_url": "/cards/the-fool.webp"
+    "image_url": "/cards/the-fool.webp",
+    "details": {
+      "keywords_upright": [
+        "Khởi đầu",
+        "Tự do",
+        "Phiêu lưu",
+        "Ngây thơ"
+      ],
+      "keywords_reversed": [
+        "Liều lĩnh",
+        "Do dự",
+        "Thiếu chuẩn bị"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": "Thiên Vương Tinh",
+      "love": {
+        "upright": "Một mối quan hệ mới mẻ, vui tươi; hãy mở lòng mà không vội định nghĩa.",
+        "reversed": "Yêu bốc đồng hoặc sợ cam kết; cần nghiêm túc hơn với cảm xúc của cả hai."
+      },
+      "career": {
+        "upright": "Thời điểm tốt để thử hướng đi mới, khởi nghiệp hay nhận dự án lạ.",
+        "reversed": "Nhảy việc thiếu kế hoạch; tìm hiểu kỹ trước khi quyết."
+      },
+      "finance": {
+        "upright": "Sẵn sàng thử cơ hội mới nhưng nên để dành một khoản dự phòng.",
+        "reversed": "Chi tiêu bốc đồng, đầu tư theo cảm hứng; dễ hao hụt."
+      },
+      "health": {
+        "upright": "Tinh thần phơi phới, nhiều năng lượng; thử một thói quen vận động mới.",
+        "reversed": "Bất cẩn dễ gây va chạm, chấn thương nhỏ; chú ý an toàn."
+      },
+      "advice": "Cứ bước đi với trái tim rộng mở, nhưng vẫn nhìn đường dưới chân.",
+      "imagery": "Chàng trai mang tay nải đứng mép vực, tay cầm bông hồng trắng, chú chó nhỏ nhảy theo."
+    }
   },
   {
     "slug": "the-magician",
@@ -19,7 +56,44 @@
     "number": 1,
     "upright_meaning": "Có đủ công cụ và khả năng để biến ý định thành hành động; chủ động, tập trung, khéo léo.",
     "reversed_meaning": "Tài năng bị lãng phí hoặc dùng sai cách; thiếu tập trung, thao túng hoặc nói nhiều hơn làm.",
-    "image_url": "/cards/the-magician.webp"
+    "image_url": "/cards/the-magician.webp",
+    "details": {
+      "keywords_upright": [
+        "Ý chí",
+        "Kỹ năng",
+        "Hành động",
+        "Hiện thực hóa"
+      ],
+      "keywords_reversed": [
+        "Thao túng",
+        "Lãng phí tài năng",
+        "Thiếu tập trung"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": "Sao Thủy",
+      "love": {
+        "upright": "Bạn có sức hút và chủ động; nói rõ điều mình muốn sẽ được đáp lại.",
+        "reversed": "Lời ngọt thiếu thật lòng; cẩn trọng với sự thao túng."
+      },
+      "career": {
+        "upright": "Đủ công cụ và năng lực để bắt đầu; hãy hành động ngay.",
+        "reversed": "Dàn trải nhiều việc, thiếu kế hoạch; hoặc có người thiếu trung thực."
+      },
+      "finance": {
+        "upright": "Biến ý tưởng thành nguồn thu; kỹ năng của bạn là tài sản.",
+        "reversed": "Cẩn thận lời mời làm giàu nhanh, hứa hẹn quá đẹp."
+      },
+      "health": {
+        "upright": "Tâm trí minh mẫn, chủ động chăm sóc bản thân sẽ có kết quả.",
+        "reversed": "Căng thẳng do ôm đồm; cần nghỉ ngơi và tập trung lại."
+      },
+      "advice": "Mọi thứ cần đã ở trong tay bạn; chỉ còn thiếu bước đầu tiên.",
+      "imagery": "Pháp sư một tay chỉ trời, một tay chỉ đất; trên bàn có gậy, cốc, kiếm và đồng tiền."
+    }
   },
   {
     "slug": "the-high-priestess",
@@ -30,7 +104,44 @@
     "number": 2,
     "upright_meaning": "Trực giác, bí mật chưa được tiết lộ và sự im lặng chiêm nghiệm; hãy lắng nghe điều bên trong.",
     "reversed_meaning": "Phớt lờ trực giác, bí mật bị che giấu hoặc rối ren, mất kết nối với bản thân.",
-    "image_url": "/cards/the-high-priestess.webp"
+    "image_url": "/cards/the-high-priestess.webp",
+    "details": {
+      "keywords_upright": [
+        "Trực giác",
+        "Bí ẩn",
+        "Tiềm thức",
+        "Tĩnh lặng"
+      ],
+      "keywords_reversed": [
+        "Phớt lờ trực giác",
+        "Bí mật",
+        "Hời hợt"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Nước",
+      "astrology": "Mặt Trăng",
+      "love": {
+        "upright": "Có điều chưa nói ra; lắng nghe cảm nhận hơn là lời nói.",
+        "reversed": "Bí mật hoặc khoảng cách cảm xúc; cần thẳng thắn với nhau."
+      },
+      "career": {
+        "upright": "Quan sát trước khi hành động; thông tin quan trọng chưa lộ hết.",
+        "reversed": "Bỏ qua linh cảm, dễ bị giấu thông tin; kiểm tra kỹ lại."
+      },
+      "finance": {
+        "upright": "Chưa phải lúc quyết; chờ thêm dữ kiện rõ ràng.",
+        "reversed": "Có chi phí ẩn hoặc điều khoản khuất; đọc kỹ hợp đồng."
+      },
+      "health": {
+        "upright": "Cơ thể đang gửi tín hiệu; lắng nghe và nghỉ ngơi đủ.",
+        "reversed": "Bỏ qua dấu hiệu nhỏ của cơ thể; nên đi kiểm tra."
+      },
+      "advice": "Câu trả lời đã có sẵn bên trong; hãy tĩnh lại để nghe thấy nó.",
+      "imagery": "Nữ tư tế ngồi giữa hai cột đen trắng, tay ôm cuộn sách, dưới chân là vầng trăng lưỡi liềm."
+    }
   },
   {
     "slug": "the-empress",
@@ -41,7 +152,44 @@
     "number": 3,
     "upright_meaning": "Sự nuôi dưỡng, sung túc, sáng tạo và chăm sóc; một giai đoạn phát triển dồi dào.",
     "reversed_meaning": "Phụ thuộc, bỏ bê bản thân, bao bọc quá mức hoặc sáng tạo bị chững lại.",
-    "image_url": "/cards/the-empress.webp"
+    "image_url": "/cards/the-empress.webp",
+    "details": {
+      "keywords_upright": [
+        "Nuôi dưỡng",
+        "Sung túc",
+        "Sáng tạo",
+        "Nữ tính"
+      ],
+      "keywords_reversed": [
+        "Phụ thuộc",
+        "Bỏ bê bản thân",
+        "Trì trệ sáng tạo"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": "Sao Kim",
+      "love": {
+        "upright": "Tình cảm ấm áp, gắn bó; thời điểm tốt để vun đắp gia đình.",
+        "reversed": "Bao bọc quá mức hoặc thấy mình bị xem nhẹ; cân bằng cho và nhận."
+      },
+      "career": {
+        "upright": "Ý tưởng sáng tạo đơm hoa; công việc phát triển tự nhiên.",
+        "reversed": "Sáng tạo bị tắc; cần thời gian nạp lại cảm hứng."
+      },
+      "finance": {
+        "upright": "Tài chính dồi dào, đủ đầy; tận hưởng nhưng đừng phung phí.",
+        "reversed": "Chi tiêu cho cảm xúc nhất thời; xem lại ngân sách."
+      },
+      "health": {
+        "upright": "Sức khỏe tốt, cơ thể được nuôi dưỡng; ăn uống điều độ.",
+        "reversed": "Bỏ bê chăm sóc bản thân; cần ngủ đủ và ăn lành mạnh."
+      },
+      "advice": "Hãy chăm sóc chính mình như cách bạn chăm sóc người khác.",
+      "imagery": "Người phụ nữ ngồi giữa cánh đồng lúa chín, đội vương miện mười hai ngôi sao, tựa gối có biểu tượng Sao Kim."
+    }
   },
   {
     "slug": "the-emperor",
@@ -52,7 +200,44 @@
     "number": 4,
     "upright_meaning": "Cấu trúc, kỷ luật, quyền lực và trách nhiệm; xây dựng nền tảng vững chắc.",
     "reversed_meaning": "Cứng nhắc, độc đoán, kiểm soát quá mức, hoặc thiếu kỷ luật và quyền chủ động.",
-    "image_url": "/cards/the-emperor.webp"
+    "image_url": "/cards/the-emperor.webp",
+    "details": {
+      "keywords_upright": [
+        "Quyền lực",
+        "Kỷ luật",
+        "Ổn định",
+        "Cấu trúc"
+      ],
+      "keywords_reversed": [
+        "Độc đoán",
+        "Cứng nhắc",
+        "Mất kiểm soát"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": "Bạch Dương",
+      "love": {
+        "upright": "Mối quan hệ vững chãi, có trách nhiệm; người kia đáng tin cậy.",
+        "reversed": "Kiểm soát hoặc gia trưởng; cần tôn trọng tiếng nói của nhau."
+      },
+      "career": {
+        "upright": "Có tố chất lãnh đạo; lập kế hoạch rõ ràng sẽ thành công.",
+        "reversed": "Sếp khó tính hoặc bạn quá cứng nhắc; linh hoạt hơn."
+      },
+      "finance": {
+        "upright": "Quản lý tiền có kỷ luật, tài chính ổn định lâu dài.",
+        "reversed": "Chi tiêu mất kiểm soát hoặc phụ thuộc người khác về tiền."
+      },
+      "health": {
+        "upright": "Kỷ luật sinh hoạt giúp cơ thể khỏe mạnh.",
+        "reversed": "Căng thẳng vì gồng gánh; chú ý huyết áp, đau đầu."
+      },
+      "advice": "Đặt ra trật tự cho cuộc sống, nhưng đừng để nó thành song sắt.",
+      "imagery": "Hoàng đế ngồi trên ngai đá khắc đầu cừu, tay cầm quyền trượng ankh, phía sau là núi đá trơ trọi."
+    }
   },
   {
     "slug": "the-hierophant",
@@ -63,7 +248,44 @@
     "number": 5,
     "upright_meaning": "Truyền thống, học hỏi từ người đi trước, chuẩn mực và niềm tin chung.",
     "reversed_meaning": "Phá vỡ khuôn mẫu, nghi ngờ quy tắc cũ, hoặc bị gò bó bởi lề thói không còn phù hợp.",
-    "image_url": "/cards/the-hierophant.webp"
+    "image_url": "/cards/the-hierophant.webp",
+    "details": {
+      "keywords_upright": [
+        "Truyền thống",
+        "Niềm tin",
+        "Học hỏi",
+        "Khuôn phép"
+      ],
+      "keywords_reversed": [
+        "Phá lệ",
+        "Giáo điều",
+        "Nổi loạn"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Đất",
+      "astrology": "Kim Ngưu",
+      "love": {
+        "upright": "Mối quan hệ nghiêm túc, hướng tới cam kết hoặc được gia đình ủng hộ.",
+        "reversed": "Khác biệt quan niệm; đừng để khuôn mẫu áp lên tình cảm."
+      },
+      "career": {
+        "upright": "Học từ người đi trước, theo quy trình chuẩn sẽ hiệu quả.",
+        "reversed": "Quy định cứng nhắc kìm hãm; cân nhắc cách làm mới."
+      },
+      "finance": {
+        "upright": "Chọn cách quản lý tiền an toàn, truyền thống.",
+        "reversed": "Lời khuyên tài chính lỗi thời; tự tìm hiểu thêm."
+      },
+      "health": {
+        "upright": "Theo phác đồ, lời khuyên của chuyên gia.",
+        "reversed": "Thói quen cũ không còn hợp; điều chỉnh lối sống."
+      },
+      "advice": "Tìm một người thầy, nhưng giữ cho mình quyền đặt câu hỏi.",
+      "imagery": "Giáo hoàng ngồi giữa hai cột, giơ tay ban phước, hai tu sĩ quỳ trước, dưới chân là hai chiếc chìa khóa bắt chéo."
+    }
   },
   {
     "slug": "the-lovers",
@@ -74,7 +296,44 @@
     "number": 6,
     "upright_meaning": "Mối quan hệ gắn kết, sự hòa hợp về giá trị và một lựa chọn quan trọng xuất phát từ trái tim.",
     "reversed_meaning": "Bất hòa, lựa chọn đi ngược giá trị bản thân, hoặc do dự giữa các hướng đi.",
-    "image_url": "/cards/the-lovers.webp"
+    "image_url": "/cards/the-lovers.webp",
+    "details": {
+      "keywords_upright": [
+        "Tình yêu",
+        "Hòa hợp",
+        "Lựa chọn",
+        "Giá trị"
+      ],
+      "keywords_reversed": [
+        "Mất cân bằng",
+        "Lựa chọn sai",
+        "Bất đồng"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": "Song Tử",
+      "love": {
+        "upright": "Kết nối sâu sắc, hòa hợp cả tâm hồn; có thể là một cam kết quan trọng.",
+        "reversed": "Lệch nhịp giá trị hoặc cám dỗ chen ngang; cần đối thoại thật lòng."
+      },
+      "career": {
+        "upright": "Đứng trước lựa chọn quan trọng; chọn điều đúng với giá trị của bạn.",
+        "reversed": "Mâu thuẫn với đồng nghiệp hoặc chọn việc vì lý do sai."
+      },
+      "finance": {
+        "upright": "Hợp tác tài chính thuận lợi khi hai bên cùng mục tiêu.",
+        "reversed": "Bất đồng về tiền bạc với người thân; minh bạch hơn."
+      },
+      "health": {
+        "upright": "Cân bằng thân và tâm; tinh thần tốt giúp cơ thể khỏe.",
+        "reversed": "Mất cân bằng cảm xúc ảnh hưởng giấc ngủ và ăn uống."
+      },
+      "advice": "Lựa chọn nào khiến bạn sống thật với mình nhất?",
+      "imagery": "Đôi nam nữ trần trụi đứng dưới thiên thần dang cánh, sau lưng là cây tri thức có rắn quấn."
+    }
   },
   {
     "slug": "the-chariot",
@@ -85,7 +344,44 @@
     "number": 7,
     "upright_meaning": "Ý chí và quyết tâm vượt trở ngại, giữ vững hướng đi, thành công nhờ tự chủ.",
     "reversed_meaning": "Mất phương hướng, thiếu kiểm soát, hung hăng, hoặc bị cuốn đi bởi các lực kéo ngược nhau.",
-    "image_url": "/cards/the-chariot.webp"
+    "image_url": "/cards/the-chariot.webp",
+    "details": {
+      "keywords_upright": [
+        "Quyết tâm",
+        "Chiến thắng",
+        "Kiểm soát",
+        "Tiến lên"
+      ],
+      "keywords_reversed": [
+        "Mất phương hướng",
+        "Hung hăng",
+        "Trì hoãn"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Nước",
+      "astrology": "Cự Giải",
+      "love": {
+        "upright": "Chủ động theo đuổi sẽ có kết quả; hai người cùng hướng về một phía.",
+        "reversed": "Giành phần thắng trong tình cảm; bớt kiểm soát, thêm lắng nghe."
+      },
+      "career": {
+        "upright": "Vượt qua trở ngại nhờ ý chí; thăng tiến hoặc hoàn thành mục tiêu.",
+        "reversed": "Mất phương hướng, mỗi người kéo một ngả; xác định lại mục tiêu."
+      },
+      "finance": {
+        "upright": "Nỗ lực bền bỉ mang lại thu nhập tốt.",
+        "reversed": "Chi tiêu thiếu kiểm soát, kế hoạch tài chính trật đường ray."
+      },
+      "health": {
+        "upright": "Ý chí mạnh giúp hồi phục nhanh.",
+        "reversed": "Gắng sức quá mức; chú ý tai nạn khi di chuyển."
+      },
+      "advice": "Nắm chắc dây cương: cả lý trí lẫn cảm xúc đều phải cùng một hướng.",
+      "imagery": "Chiến binh đứng trên cỗ xe đá, hai con nhân sư đen và trắng ngồi phía trước, không có dây cương."
+    }
   },
   {
     "slug": "strength",
@@ -96,7 +392,44 @@
     "number": 8,
     "upright_meaning": "Can đảm nhẹ nhàng, kiên nhẫn và làm chủ cảm xúc; sức mạnh đến từ sự bình tĩnh.",
     "reversed_meaning": "Nghi ngờ bản thân, kiệt sức, cảm xúc lấn át, hoặc dùng sức ép thay vì kiên nhẫn.",
-    "image_url": "/cards/strength.webp"
+    "image_url": "/cards/strength.webp",
+    "details": {
+      "keywords_upright": [
+        "Can đảm",
+        "Kiên nhẫn",
+        "Dịu dàng",
+        "Nội lực"
+      ],
+      "keywords_reversed": [
+        "Tự ti",
+        "Nóng nảy",
+        "Mất bình tĩnh"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": "Sư Tử",
+      "love": {
+        "upright": "Sự dịu dàng và kiên nhẫn sẽ chữa lành, gắn kết mối quan hệ.",
+        "reversed": "Ghen tuông, nóng giận hoặc tự ti; cần tin vào giá trị của mình."
+      },
+      "career": {
+        "upright": "Kiên trì và mềm mỏng giải quyết được khó khăn.",
+        "reversed": "Thiếu tự tin, dễ bỏ cuộc; nhìn lại những gì bạn đã làm được."
+      },
+      "finance": {
+        "upright": "Kiểm soát được ham muốn chi tiêu, tài chính dần vững.",
+        "reversed": "Mua sắm theo cảm xúc; dừng lại trước khi thanh toán."
+      },
+      "health": {
+        "upright": "Sức bền tốt, hồi phục ổn; duy trì vận động đều.",
+        "reversed": "Mệt mỏi, căng thẳng; đừng ép bản thân quá sức."
+      },
+      "advice": "Sức mạnh thật sự là sự dịu dàng không lùi bước.",
+      "imagery": "Người phụ nữ áo trắng nhẹ nhàng khép miệng sư tử, trên đầu có biểu tượng vô cực."
+    }
   },
   {
     "slug": "the-hermit",
@@ -107,7 +440,44 @@
     "number": 9,
     "upright_meaning": "Thời gian ở một mình để suy ngẫm, tìm câu trả lời bên trong và dựa vào kinh nghiệm dẫn đường.",
     "reversed_meaning": "Cô lập quá mức, rút lui để trốn tránh, hoặc từ chối lời khuyên cần thiết.",
-    "image_url": "/cards/the-hermit.webp"
+    "image_url": "/cards/the-hermit.webp",
+    "details": {
+      "keywords_upright": [
+        "Nội tâm",
+        "Tìm kiếm",
+        "Cô độc",
+        "Thông thái"
+      ],
+      "keywords_reversed": [
+        "Cô lập",
+        "Trốn tránh",
+        "Lạc lối"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Đất",
+      "astrology": "Xử Nữ",
+      "love": {
+        "upright": "Cần thời gian riêng để hiểu mình muốn gì trong tình yêu.",
+        "reversed": "Thu mình quá lâu, tự cô lập; hãy mở cửa cho người khác."
+      },
+      "career": {
+        "upright": "Tập trung chuyên sâu, nghiên cứu; tìm lời khuyên từ người có kinh nghiệm.",
+        "reversed": "Làm việc biệt lập, thiếu kết nối; chia sẻ để được hỗ trợ."
+      },
+      "finance": {
+        "upright": "Sống tiết chế, cân nhắc kỹ trước khi chi.",
+        "reversed": "Quá thận trọng nên bỏ lỡ cơ hội, hoặc né tránh vấn đề tiền bạc."
+      },
+      "health": {
+        "upright": "Nghỉ ngơi, thiền định giúp phục hồi.",
+        "reversed": "Cô đơn ảnh hưởng tinh thần; trò chuyện với người tin cậy."
+      },
+      "advice": "Lùi lại một bước để thấy rõ con đường, rồi mang ánh sáng trở về.",
+      "imagery": "Ông lão áo choàng xám đứng trên đỉnh núi tuyết, tay cầm đèn lồng có ngôi sao sáu cánh."
+    }
   },
   {
     "slug": "wheel-of-fortune",
@@ -118,7 +488,44 @@
     "number": 10,
     "upright_meaning": "Chu kỳ thay đổi, vận may xoay chuyển và một bước ngoặt nằm ngoài tầm kiểm soát.",
     "reversed_meaning": "Trục trặc hoặc xui rủi tạm thời, kháng cự thay đổi, hoặc lặp lại vòng cũ.",
-    "image_url": "/cards/wheel-of-fortune.webp"
+    "image_url": "/cards/wheel-of-fortune.webp",
+    "details": {
+      "keywords_upright": [
+        "Vận may",
+        "Chu kỳ",
+        "Bước ngoặt",
+        "Định mệnh"
+      ],
+      "keywords_reversed": [
+        "Xui rủi",
+        "Kháng cự thay đổi",
+        "Lặp lại"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": "Sao Mộc",
+      "love": {
+        "upright": "Gặp gỡ duyên số hoặc mối quan hệ sang trang mới.",
+        "reversed": "Lặp lại vết xe cũ; nhận ra khuôn mẫu để thoát khỏi nó."
+      },
+      "career": {
+        "upright": "Cơ hội bất ngờ, bước ngoặt tích cực trong sự nghiệp.",
+        "reversed": "Biến động ngoài tầm kiểm soát; chuẩn bị phương án dự phòng."
+      },
+      "finance": {
+        "upright": "Vận tài lộc đang lên; nắm bắt thời cơ.",
+        "reversed": "Thu nhập thất thường; đừng đặt cược lớn lúc này."
+      },
+      "health": {
+        "upright": "Sức khỏe chuyển biến tốt.",
+        "reversed": "Chu kỳ mệt mỏi quay lại; chú ý những vấn đề cũ."
+      },
+      "advice": "Bánh xe luôn quay; hãy linh hoạt khi ở trên và kiên nhẫn khi ở dưới.",
+      "imagery": "Bánh xe lớn khắc chữ cái bí ẩn giữa mây, quanh đó là nhân sư, rắn, thần Anubis và bốn sinh vật có cánh."
+    }
   },
   {
     "slug": "justice",
@@ -129,7 +536,44 @@
     "number": 11,
     "upright_meaning": "Công bằng, sự thật và hệ quả của hành động; quyết định cần dựa trên lý lẽ.",
     "reversed_meaning": "Bất công, thiếu minh bạch, né tránh trách nhiệm hoặc phán xét thiên lệch.",
-    "image_url": "/cards/justice.webp"
+    "image_url": "/cards/justice.webp",
+    "details": {
+      "keywords_upright": [
+        "Công bằng",
+        "Sự thật",
+        "Nhân quả",
+        "Trách nhiệm"
+      ],
+      "keywords_reversed": [
+        "Bất công",
+        "Gian dối",
+        "Né tránh trách nhiệm"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": "Thiên Bình",
+      "love": {
+        "upright": "Mối quan hệ cân bằng, cho và nhận ngang nhau; trung thực là gốc.",
+        "reversed": "Thiếu công bằng hoặc thiếu thành thật; cần nói rõ mọi chuyện."
+      },
+      "career": {
+        "upright": "Được ghi nhận xứng đáng; giấy tờ, hợp đồng thuận lợi.",
+        "reversed": "Đánh giá thiếu khách quan; giữ bằng chứng, làm đúng quy trình."
+      },
+      "finance": {
+        "upright": "Cân đối thu chi rõ ràng; vấn đề pháp lý được giải quyết.",
+        "reversed": "Tranh chấp tiền bạc; đọc kỹ điều khoản."
+      },
+      "health": {
+        "upright": "Cân bằng sinh hoạt mang lại sức khỏe.",
+        "reversed": "Hậu quả của thói quen xấu; điều chỉnh từ bây giờ."
+      },
+      "advice": "Hành động hôm nay là kết quả ngày mai; hãy chọn điều đúng.",
+      "imagery": "Nữ thần ngồi giữa hai cột, tay phải cầm kiếm dựng đứng, tay trái cầm cân."
+    }
   },
   {
     "slug": "the-hanged-man",
@@ -140,7 +584,44 @@
     "number": 12,
     "upright_meaning": "Tạm dừng, buông bỏ và nhìn sự việc từ góc nhìn khác; hy sinh ngắn hạn để có hiểu biết mới.",
     "reversed_meaning": "Trì hoãn vô ích, hy sinh mà không đem lại gì, hoặc cố cưỡng lại việc cần buông.",
-    "image_url": "/cards/the-hanged-man.webp"
+    "image_url": "/cards/the-hanged-man.webp",
+    "details": {
+      "keywords_upright": [
+        "Buông bỏ",
+        "Tạm dừng",
+        "Góc nhìn mới",
+        "Hy sinh"
+      ],
+      "keywords_reversed": [
+        "Trì trệ",
+        "Hy sinh vô ích",
+        "Cố chấp"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Nước",
+      "astrology": "Hải Vương Tinh",
+      "love": {
+        "upright": "Tạm dừng để nhìn lại; đổi góc nhìn sẽ thấy người kia rõ hơn.",
+        "reversed": "Hy sinh một chiều, chờ đợi mãi; đã đến lúc quyết định."
+      },
+      "career": {
+        "upright": "Dự án tạm hoãn; tận dụng để suy nghĩ lại cách làm.",
+        "reversed": "Mắc kẹt, không tiến không lùi; buông cách cũ đi."
+      },
+      "finance": {
+        "upright": "Chưa phải lúc đầu tư; giữ tiền và quan sát.",
+        "reversed": "Trì hoãn xử lý nợ hoặc vấn đề tài chính; đối mặt sớm."
+      },
+      "health": {
+        "upright": "Nghỉ ngơi để hồi phục; chậm lại một nhịp.",
+        "reversed": "Trì trệ, lười vận động; bắt đầu từ việc nhỏ."
+      },
+      "advice": "Đôi khi phải dừng lại và lộn ngược thế giới để thấy điều mình bỏ lỡ.",
+      "imagery": "Người đàn ông treo ngược một chân trên cây hình chữ T, vẻ mặt bình thản, quanh đầu có vầng sáng."
+    }
   },
   {
     "slug": "death",
@@ -151,7 +632,44 @@
     "number": 13,
     "upright_meaning": "Kết thúc một giai đoạn để chuyển hóa; thay đổi lớn mở đường cho khởi đầu mới (không phải nghĩa đen).",
     "reversed_meaning": "Chống cự sự kết thúc, bám lấy điều đã cũ, chuyển đổi bị trì hoãn.",
-    "image_url": "/cards/death.webp"
+    "image_url": "/cards/death.webp",
+    "details": {
+      "keywords_upright": [
+        "Kết thúc",
+        "Chuyển hóa",
+        "Buông bỏ",
+        "Tái sinh"
+      ],
+      "keywords_reversed": [
+        "Níu kéo",
+        "Sợ thay đổi",
+        "Trì trệ"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": "Bọ Cạp",
+      "love": {
+        "upright": "Một giai đoạn khép lại để mở ra điều mới; có thể là thay đổi lớn trong mối quan hệ.",
+        "reversed": "Níu kéo điều đã hết; buông tay để cả hai được tự do."
+      },
+      "career": {
+        "upright": "Kết thúc công việc cũ, chuyển hướng; cánh cửa mới đang mở.",
+        "reversed": "Sợ thay đổi nên mắc kẹt ở nơi không còn hợp."
+      },
+      "finance": {
+        "upright": "Thay đổi cách quản lý tiền; cắt bỏ khoản chi không cần thiết.",
+        "reversed": "Bám vào thói quen tài chính cũ dù không hiệu quả."
+      },
+      "health": {
+        "upright": "Từ bỏ thói quen xấu, cơ thể được làm mới.",
+        "reversed": "Kháng cự thay đổi lối sống; bắt đầu từ một bước nhỏ."
+      },
+      "advice": "Mọi kết thúc đều là hạt giống của một khởi đầu.",
+      "imagery": "Kỵ sĩ bộ xương giáp đen cưỡi ngựa trắng, cầm cờ hoa hồng trắng, mặt trời mọc giữa hai tòa tháp."
+    }
   },
   {
     "slug": "temperance",
@@ -162,7 +680,44 @@
     "number": 14,
     "upright_meaning": "Cân bằng, điều độ và hòa trộn các yếu tố; kiên nhẫn và hài hòa.",
     "reversed_meaning": "Mất cân bằng, thái quá, thiếu kiên nhẫn, hoặc xung đột giữa các phần của cuộc sống.",
-    "image_url": "/cards/temperance.webp"
+    "image_url": "/cards/temperance.webp",
+    "details": {
+      "keywords_upright": [
+        "Cân bằng",
+        "Điều độ",
+        "Kiên nhẫn",
+        "Hòa hợp"
+      ],
+      "keywords_reversed": [
+        "Thái quá",
+        "Mất cân bằng",
+        "Nóng vội"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": "Nhân Mã",
+      "love": {
+        "upright": "Mối quan hệ hài hòa, hai người bổ sung cho nhau.",
+        "reversed": "Mất cân bằng, cãi vã; cần thỏa hiệp và nhẫn nại."
+      },
+      "career": {
+        "upright": "Phối hợp tốt, làm việc ổn định; kiên nhẫn sẽ có thành quả.",
+        "reversed": "Ôm đồm hoặc nóng vội; sắp xếp lại ưu tiên."
+      },
+      "finance": {
+        "upright": "Thu chi cân đối, tiết kiệm đều đặn.",
+        "reversed": "Chi tiêu thái quá; quay lại với ngân sách."
+      },
+      "health": {
+        "upright": "Sức khỏe cân bằng; ăn uống, nghỉ ngơi điều độ.",
+        "reversed": "Sinh hoạt thất thường; giảm những thứ dư thừa."
+      },
+      "advice": "Pha trộn đúng liều lượng: không quá nhiều, không quá ít.",
+      "imagery": "Thiên thần một chân dưới nước, một chân trên bờ, rót nước qua lại giữa hai chiếc cốc."
+    }
   },
   {
     "slug": "the-devil",
@@ -173,7 +728,44 @@
     "number": 15,
     "upright_meaning": "Ràng buộc, cám dỗ, thói quen hoặc nỗi sợ đang trói buộc; cần nhìn rõ điều giữ mình lại.",
     "reversed_meaning": "Bắt đầu thoát khỏi ràng buộc, nhận ra xiềng xích do chính mình đặt ra, lấy lại quyền tự chủ.",
-    "image_url": "/cards/the-devil.webp"
+    "image_url": "/cards/the-devil.webp",
+    "details": {
+      "keywords_upright": [
+        "Ràng buộc",
+        "Cám dỗ",
+        "Nghiện",
+        "Vật chất"
+      ],
+      "keywords_reversed": [
+        "Giải thoát",
+        "Phá xiềng",
+        "Nhận ra"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": "Ma Kết",
+      "love": {
+        "upright": "Mối quan hệ ràng buộc, ghen tuông hoặc phụ thuộc; hỏi xem bạn có thật sự tự do.",
+        "reversed": "Nhận ra và thoát khỏi một mối quan hệ độc hại."
+      },
+      "career": {
+        "upright": "Mắc kẹt vì lương hoặc áp lực; công việc làm bạn kiệt sức.",
+        "reversed": "Dần thoát khỏi môi trường độc hại, lấy lại quyền chủ động."
+      },
+      "finance": {
+        "upright": "Nợ nần, chi tiêu vì ham muốn; cẩn trọng cờ bạc.",
+        "reversed": "Bắt đầu kiểm soát lại tài chính, trả dần nợ."
+      },
+      "health": {
+        "upright": "Thói quen xấu, nghiện ngập ảnh hưởng sức khỏe.",
+        "reversed": "Quyết tâm cai bỏ thói quen hại thân."
+      },
+      "advice": "Sợi xích lỏng hơn bạn nghĩ; bạn có thể tháo nó ra.",
+      "imagery": "Ác quỷ sừng dê ngồi trên bệ, dưới chân là đôi nam nữ bị xích cổ bằng sợi xích lỏng."
+    }
   },
   {
     "slug": "the-tower",
@@ -184,7 +776,44 @@
     "number": 16,
     "upright_meaning": "Biến cố bất ngờ phá vỡ nền tảng không vững; sự thật lộ ra và buộc phải xây lại.",
     "reversed_meaning": "Tránh được hoặc trì hoãn khủng hoảng, sợ thay đổi, hệ quả âm ỉ chưa được giải quyết.",
-    "image_url": "/cards/the-tower.webp"
+    "image_url": "/cards/the-tower.webp",
+    "details": {
+      "keywords_upright": [
+        "Đổ vỡ",
+        "Biến cố",
+        "Thức tỉnh",
+        "Sự thật"
+      ],
+      "keywords_reversed": [
+        "Né tránh thảm họa",
+        "Sợ thay đổi",
+        "Dư chấn"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": "Sao Hỏa",
+      "love": {
+        "upright": "Sự thật bất ngờ lộ ra, mối quan hệ chấn động; điều không vững sẽ sụp.",
+        "reversed": "Cố giữ vẻ ngoài yên ổn trong khi bên trong đã rạn nứt."
+      },
+      "career": {
+        "upright": "Biến động đột ngột: tái cơ cấu, mất việc hoặc kế hoạch đổ vỡ.",
+        "reversed": "Thay đổi bị trì hoãn nhưng không tránh được; chuẩn bị sẵn."
+      },
+      "finance": {
+        "upright": "Tổn thất bất ngờ; giữ quỹ khẩn cấp.",
+        "reversed": "Thoát được rủi ro lớn trong gang tấc; rút kinh nghiệm."
+      },
+      "health": {
+        "upright": "Căng thẳng đột ngột; đừng bỏ qua dấu hiệu bất thường.",
+        "reversed": "Hồi phục sau cú sốc; cho mình thời gian."
+      },
+      "advice": "Khi điều giả tạo sụp đổ, nền móng thật mới hiện ra.",
+      "imagery": "Tòa tháp trên đỉnh núi bị sét đánh, vương miện rơi, hai người lao xuống từ cửa sổ."
+    }
   },
   {
     "slug": "the-star",
@@ -195,7 +824,44 @@
     "number": 17,
     "upright_meaning": "Hy vọng, hồi phục và niềm tin sau khó khăn; cảm hứng và sự bình yên.",
     "reversed_meaning": "Mất niềm tin, thất vọng, khó nhìn thấy hy vọng, hoặc kỳ vọng thiếu thực tế.",
-    "image_url": "/cards/the-star.webp"
+    "image_url": "/cards/the-star.webp",
+    "details": {
+      "keywords_upright": [
+        "Hy vọng",
+        "Chữa lành",
+        "Cảm hứng",
+        "Bình yên"
+      ],
+      "keywords_reversed": [
+        "Mất niềm tin",
+        "Nản lòng",
+        "Mất kết nối"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": "Bảo Bình",
+      "love": {
+        "upright": "Hy vọng và chữa lành; tình cảm chân thành, nhẹ nhàng.",
+        "reversed": "Thất vọng khiến bạn khép lòng; hãy cho mình cơ hội."
+      },
+      "career": {
+        "upright": "Cảm hứng trở lại, mục tiêu dài hạn rõ ràng.",
+        "reversed": "Mất động lực; nhớ lại lý do bạn bắt đầu."
+      },
+      "finance": {
+        "upright": "Tài chính dần hồi phục, có triển vọng.",
+        "reversed": "Lo âu về tiền; lập kế hoạch nhỏ, khả thi."
+      },
+      "health": {
+        "upright": "Hồi phục tốt, tinh thần được chữa lành.",
+        "reversed": "Mệt mỏi tinh thần; tìm sự hỗ trợ."
+      },
+      "advice": "Sau cơn bão, ngôi sao vẫn sáng; hãy tin vào điều tốt đẹp.",
+      "imagery": "Người phụ nữ quỳ bên hồ, đổ nước từ hai bình xuống đất và nước, trên trời có tám ngôi sao."
+    }
   },
   {
     "slug": "the-moon",
@@ -206,7 +872,44 @@
     "number": 18,
     "upright_meaning": "Bất an, ảo ảnh và những điều chưa rõ; cảm xúc ẩn sâu, cần lắng nghe trực giác nhưng thận trọng.",
     "reversed_meaning": "Sự thật dần sáng tỏ, nỗi sợ giảm đi; hoặc bị đánh lừa và bối rối kéo dài.",
-    "image_url": "/cards/the-moon.webp"
+    "image_url": "/cards/the-moon.webp",
+    "details": {
+      "keywords_upright": [
+        "Ảo ảnh",
+        "Bất an",
+        "Trực giác",
+        "Tiềm thức"
+      ],
+      "keywords_reversed": [
+        "Sáng tỏ",
+        "Vượt nỗi sợ",
+        "Sự thật lộ ra"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": "Song Ngư",
+      "love": {
+        "upright": "Mơ hồ, nghi ngờ; có điều chưa rõ ràng trong mối quan hệ.",
+        "reversed": "Hiểu lầm được giải tỏa, sự thật dần sáng tỏ."
+      },
+      "career": {
+        "upright": "Thông tin chưa đầy đủ; cẩn thận với lời đồn.",
+        "reversed": "Bức tranh rõ dần; đưa ra quyết định đã chờ lâu."
+      },
+      "finance": {
+        "upright": "Không chắc chắn; tránh đầu tư vào điều mình chưa hiểu.",
+        "reversed": "Phát hiện chi phí ẩn hoặc lừa đảo kịp thời."
+      },
+      "health": {
+        "upright": "Lo âu, mất ngủ; chăm sóc sức khỏe tinh thần.",
+        "reversed": "Nỗi lo dịu dần, giấc ngủ cải thiện."
+      },
+      "advice": "Không phải điều gì trong bóng tối cũng đáng sợ; bước chậm và tin trực giác.",
+      "imagery": "Trăng tròn giữa hai tòa tháp, chó và sói tru lên, con tôm bò lên từ hồ nước."
+    }
   },
   {
     "slug": "the-sun",
@@ -217,7 +920,44 @@
     "number": 19,
     "upright_meaning": "Niềm vui, thành công, sự rõ ràng và năng lượng tích cực.",
     "reversed_meaning": "Niềm vui bị che mờ hoặc tạm hoãn, lạc quan thái quá, kết quả chưa đạt kỳ vọng.",
-    "image_url": "/cards/the-sun.webp"
+    "image_url": "/cards/the-sun.webp",
+    "details": {
+      "keywords_upright": [
+        "Niềm vui",
+        "Thành công",
+        "Lạc quan",
+        "Sức sống"
+      ],
+      "keywords_reversed": [
+        "Niềm vui tạm lắng",
+        "Quá tự tin",
+        "Trì hoãn"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "yes"
+      },
+      "element": "Lửa",
+      "astrology": "Mặt Trời",
+      "love": {
+        "upright": "Hạnh phúc rạng rỡ, tình cảm cởi mở và ấm áp.",
+        "reversed": "Niềm vui bị che khuất tạm thời; đừng kỳ vọng hoàn hảo."
+      },
+      "career": {
+        "upright": "Thành công, được công nhận; năng lượng làm việc dồi dào.",
+        "reversed": "Chậm hơn mong đợi hoặc quá tự tin; giữ chân trên mặt đất."
+      },
+      "finance": {
+        "upright": "Tài chính sáng sủa, thịnh vượng.",
+        "reversed": "Thu nhập ổn nhưng đừng chủ quan."
+      },
+      "health": {
+        "upright": "Tràn đầy sức sống, hồi phục tốt.",
+        "reversed": "Hơi mệt, cần ra ngoài nắng và vận động."
+      },
+      "advice": "Hãy để mình được vui trọn vẹn; bạn xứng đáng với điều đó.",
+      "imagery": "Em bé cưỡi ngựa trắng dưới mặt trời rực rỡ, phía sau là bức tường với hàng hoa hướng dương."
+    }
   },
   {
     "slug": "judgement",
@@ -228,7 +968,44 @@
     "number": 20,
     "upright_meaning": "Thức tỉnh, đánh giá lại bản thân, đón nhận lời gọi sống đúng hơn và khép lại quá khứ.",
     "reversed_meaning": "Tự phán xét khắt khe, bỏ lỡ lời gọi thay đổi, không chịu học từ quá khứ.",
-    "image_url": "/cards/judgement.webp"
+    "image_url": "/cards/judgement.webp",
+    "details": {
+      "keywords_upright": [
+        "Thức tỉnh",
+        "Phán xét",
+        "Tái sinh",
+        "Tiếng gọi"
+      ],
+      "keywords_reversed": [
+        "Tự trách",
+        "Hoài nghi",
+        "Bỏ lỡ tiếng gọi"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": "Diêm Vương Tinh",
+      "love": {
+        "upright": "Nhìn lại quá khứ và tha thứ; có thể là cơ hội làm lại.",
+        "reversed": "Tự trách, sợ bị phán xét; buông gánh nặng cũ."
+      },
+      "career": {
+        "upright": "Tiếng gọi sự nghiệp rõ ràng; thời điểm đánh giá và nâng cấp.",
+        "reversed": "Do dự trước cơ hội lớn; đừng để nỗi sợ quyết thay bạn."
+      },
+      "finance": {
+        "upright": "Đánh giá lại tài chính, quyết định sáng suốt.",
+        "reversed": "Lặp lại sai lầm tài chính cũ."
+      },
+      "health": {
+        "upright": "Hồi phục, như được làm mới.",
+        "reversed": "Bỏ qua lời khuyên sức khỏe; hãy lắng nghe."
+      },
+      "advice": "Đã đến lúc trả lời tiếng gọi bên trong bạn.",
+      "imagery": "Thiên thần thổi kèn trên mây, người dưới đất đứng dậy từ những chiếc quan tài, giơ tay đón."
+    }
   },
   {
     "slug": "the-world",
@@ -239,7 +1016,44 @@
     "number": 21,
     "upright_meaning": "Hoàn thành, trọn vẹn và đạt được mục tiêu; khép lại một chu kỳ.",
     "reversed_meaning": "Gần xong nhưng còn thiếu một mảnh, trì hoãn kết thúc, chưa khép lại được.",
-    "image_url": "/cards/the-world.webp"
+    "image_url": "/cards/the-world.webp",
+    "details": {
+      "keywords_upright": [
+        "Hoàn thành",
+        "Viên mãn",
+        "Hội nhập",
+        "Thành tựu"
+      ],
+      "keywords_reversed": [
+        "Dang dở",
+        "Thiếu kết thúc",
+        "Trì hoãn"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": "Sao Thổ",
+      "love": {
+        "upright": "Mối quan hệ viên mãn, gắn bó; một chương đẹp được trọn vẹn.",
+        "reversed": "Còn điều dang dở cần khép lại trước khi bước tiếp."
+      },
+      "career": {
+        "upright": "Hoàn thành mục tiêu lớn, có thể mở rộng ra quốc tế.",
+        "reversed": "Gần đích nhưng còn thiếu bước cuối; đừng bỏ dở."
+      },
+      "finance": {
+        "upright": "Thành quả tài chính xứng đáng sau thời gian dài.",
+        "reversed": "Tài chính chưa trọn vẹn; hoàn tất những khoản còn treo."
+      },
+      "health": {
+        "upright": "Sức khỏe cân bằng, viên mãn.",
+        "reversed": "Chưa hồi phục hẳn; kiên trì điều trị."
+      },
+      "advice": "Ăn mừng điều bạn đã hoàn thành, rồi chuẩn bị cho vòng tiếp theo.",
+      "imagery": "Vũ công giữa vòng nguyệt quế, tay cầm hai cây gậy, bốn góc là bốn sinh vật có cánh."
+    }
   },
   {
     "slug": "ace-of-wands",
@@ -250,7 +1064,44 @@
     "number": 1,
     "upright_meaning": "Tia lửa khởi đầu, ý tưởng hoặc cơ hội mới đầy nhiệt huyết.",
     "reversed_meaning": "Thiếu động lực, ý tưởng chưa thành hình, cơ hội bị trì hoãn.",
-    "image_url": "/cards/ace-of-wands.webp"
+    "image_url": "/cards/ace-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Cảm hứng",
+        "Khởi đầu",
+        "Đam mê",
+        "Tiềm năng"
+      ],
+      "keywords_reversed": [
+        "Trì hoãn",
+        "Mất hứng",
+        "Ý tưởng chưa chín"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Tia lửa mới, sức hút mạnh; một mối quan hệ nồng nhiệt bắt đầu.",
+        "reversed": "Nhiệt tình nhanh tắt; đừng vội hứa hẹn."
+      },
+      "career": {
+        "upright": "Ý tưởng hoặc dự án mới đầy tiềm năng; bắt tay ngay.",
+        "reversed": "Kế hoạch bị trì hoãn, thiếu động lực."
+      },
+      "finance": {
+        "upright": "Cơ hội kiếm tiền mới từ đam mê.",
+        "reversed": "Nguồn thu mới chưa ổn định; đừng vội đầu tư."
+      },
+      "health": {
+        "upright": "Năng lượng dồi dào, khỏe khoắn.",
+        "reversed": "Uể oải, thiếu năng lượng; ngủ đủ hơn."
+      },
+      "advice": "Nắm lấy tia lửa khi nó còn nóng.",
+      "imagery": "Bàn tay hiện ra từ mây nắm cây gậy đâm chồi, phía xa là lâu đài."
+    }
   },
   {
     "slug": "two-of-wands",
@@ -261,7 +1112,44 @@
     "number": 2,
     "upright_meaning": "Lập kế hoạch cho tương lai, cân nhắc lựa chọn và bước ra khỏi vùng quen thuộc.",
     "reversed_meaning": "Sợ rủi ro, thiếu kế hoạch rõ ràng, ở yên trong vùng an toàn.",
-    "image_url": "/cards/two-of-wands.webp"
+    "image_url": "/cards/two-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Kế hoạch",
+        "Tầm nhìn",
+        "Quyết định",
+        "Khám phá"
+      ],
+      "keywords_reversed": [
+        "Sợ rủi ro",
+        "Thiếu kế hoạch",
+        "Do dự"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Cân nhắc tương lai chung; có thể là yêu xa hoặc tính chuyện lâu dài.",
+        "reversed": "Ngại bước ra khỏi vùng an toàn trong tình cảm."
+      },
+      "career": {
+        "upright": "Lập kế hoạch dài hạn, cân nhắc mở rộng.",
+        "reversed": "Do dự, bỏ lỡ cơ hội vì sợ thay đổi."
+      },
+      "finance": {
+        "upright": "Lên kế hoạch đầu tư có tầm nhìn.",
+        "reversed": "Kế hoạch tài chính mơ hồ; cần cụ thể hơn."
+      },
+      "health": {
+        "upright": "Ổn định; nên lên kế hoạch luyện tập.",
+        "reversed": "Bồn chồn, khó tập trung."
+      },
+      "advice": "Thế giới rộng lớn; hãy quyết định bạn muốn đi đâu.",
+      "imagery": "Người đàn ông đứng trên tường thành, tay cầm quả địa cầu, nhìn ra biển."
+    }
   },
   {
     "slug": "three-of-wands",
@@ -272,7 +1160,44 @@
     "number": 3,
     "upright_meaning": "Kế hoạch bắt đầu thành hình, chờ kết quả và mở rộng tầm nhìn.",
     "reversed_meaning": "Trì hoãn, kế hoạch không như mong đợi, thiếu sự phối hợp.",
-    "image_url": "/cards/three-of-wands.webp"
+    "image_url": "/cards/three-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Mở rộng",
+        "Tầm nhìn xa",
+        "Tiến triển",
+        "Chờ đợi"
+      ],
+      "keywords_reversed": [
+        "Trở ngại",
+        "Chậm trễ",
+        "Thất vọng"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Mối quan hệ phát triển; có thể có chuyến đi cùng nhau.",
+        "reversed": "Kỳ vọng chưa thành; kiên nhẫn hơn."
+      },
+      "career": {
+        "upright": "Dự án tiến triển, cơ hội từ xa hoặc nước ngoài.",
+        "reversed": "Kế hoạch chậm hơn dự kiến."
+      },
+      "finance": {
+        "upright": "Đầu tư bắt đầu sinh lời.",
+        "reversed": "Lợi nhuận chậm, chi phí phát sinh."
+      },
+      "health": {
+        "upright": "Hồi phục đều đặn.",
+        "reversed": "Tiến triển chậm; kiên trì."
+      },
+      "advice": "Những con thuyền bạn gửi đi đang trở về.",
+      "imagery": "Người đàn ông đứng trên đồi nhìn những con thuyền ra khơi, ba cây gậy cắm bên cạnh."
+    }
   },
   {
     "slug": "four-of-wands",
@@ -283,7 +1208,44 @@
     "number": 4,
     "upright_meaning": "Ăn mừng một cột mốc, sự ổn định và cảm giác thuộc về.",
     "reversed_meaning": "Bất ổn ở nền tảng, thiếu hòa hợp, hoặc lễ ăn mừng bị hoãn.",
-    "image_url": "/cards/four-of-wands.webp"
+    "image_url": "/cards/four-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Ăn mừng",
+        "Hòa thuận",
+        "Mái ấm",
+        "Cột mốc"
+      ],
+      "keywords_reversed": [
+        "Bất hòa gia đình",
+        "Hoãn lễ",
+        "Thiếu gắn kết"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Hạnh phúc, có thể là đính hôn, cưới hỏi hoặc ra mắt gia đình.",
+        "reversed": "Bất đồng gia đình ảnh hưởng tình cảm."
+      },
+      "career": {
+        "upright": "Đạt cột mốc, được ăn mừng cùng đồng nghiệp.",
+        "reversed": "Môi trường làm việc kém gắn kết."
+      },
+      "finance": {
+        "upright": "Tài chính ổn định, đủ để tận hưởng.",
+        "reversed": "Chi phí sự kiện vượt dự tính."
+      },
+      "health": {
+        "upright": "Tinh thần vui vẻ, sức khỏe tốt.",
+        "reversed": "Căng thẳng do việc nhà."
+      },
+      "advice": "Dành thời gian ăn mừng cùng người thân.",
+      "imagery": "Bốn cây gậy kết hoa ở phía trước, hai người giơ bó hoa chào đón, lâu đài phía sau."
+    }
   },
   {
     "slug": "five-of-wands",
@@ -294,7 +1256,44 @@
     "number": 5,
     "upright_meaning": "Cạnh tranh, bất đồng ý kiến và va chạm; nhiều bên cùng tranh giành.",
     "reversed_meaning": "Tránh né xung đột, xung đột âm ỉ hoặc dần hạ nhiệt.",
-    "image_url": "/cards/five-of-wands.webp"
+    "image_url": "/cards/five-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Cạnh tranh",
+        "Xung đột",
+        "Tranh luận",
+        "Thử thách"
+      ],
+      "keywords_reversed": [
+        "Tránh xung đột",
+        "Hòa giải",
+        "Mâu thuẫn ngầm"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Cãi vã nhỏ hoặc có người cạnh tranh.",
+        "reversed": "Cố tránh cãi nhau nên mâu thuẫn dồn nén."
+      },
+      "career": {
+        "upright": "Cạnh tranh gay gắt; chứng minh năng lực.",
+        "reversed": "Xung đột được giải quyết hoặc né tránh."
+      },
+      "finance": {
+        "upright": "Cạnh tranh về tiền bạc; thận trọng.",
+        "reversed": "Tranh chấp lắng xuống."
+      },
+      "health": {
+        "upright": "Căng thẳng; vận động để xả năng lượng.",
+        "reversed": "Mệt mỏi vì áp lực kéo dài."
+      },
+      "advice": "Không phải cuộc tranh luận nào cũng cần thắng.",
+      "imagery": "Năm thanh niên vung gậy như đang hỗn chiến, không ai thật sự đánh ai."
+    }
   },
   {
     "slug": "six-of-wands",
@@ -305,7 +1304,44 @@
     "number": 6,
     "upright_meaning": "Chiến thắng, được công nhận và niềm tự hào sau nỗ lực.",
     "reversed_meaning": "Thiếu ghi nhận, tự cao, hoặc sợ thất bại trước mặt người khác.",
-    "image_url": "/cards/six-of-wands.webp"
+    "image_url": "/cards/six-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Chiến thắng",
+        "Công nhận",
+        "Tự hào",
+        "Thành công"
+      ],
+      "keywords_reversed": [
+        "Kiêu ngạo",
+        "Thiếu công nhận",
+        "Thất bại"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Được ngưỡng mộ, tự tin trong tình cảm.",
+        "reversed": "Cảm thấy không được trân trọng."
+      },
+      "career": {
+        "upright": "Thành công, được thăng chức hoặc khen ngợi.",
+        "reversed": "Công sức bị lãng quên hoặc tự mãn."
+      },
+      "finance": {
+        "upright": "Thu nhập tăng nhờ thành tích.",
+        "reversed": "Kỳ vọng thưởng nhưng không như ý."
+      },
+      "health": {
+        "upright": "Hồi phục tốt, tinh thần cao.",
+        "reversed": "Suy sụp tinh thần nhẹ."
+      },
+      "advice": "Hãy tự hào, nhưng đừng quên những người cùng đi.",
+      "imagery": "Người cưỡi ngựa trắng đội vòng nguyệt quế, đám đông cầm gậy reo hò."
+    }
   },
   {
     "slug": "seven-of-wands",
@@ -316,7 +1352,44 @@
     "number": 7,
     "upright_meaning": "Bảo vệ lập trường, đứng vững trước thử thách.",
     "reversed_meaning": "Quá tải, mệt mỏi, muốn bỏ cuộc hoặc không còn đủ sức phòng thủ.",
-    "image_url": "/cards/seven-of-wands.webp"
+    "image_url": "/cards/seven-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Bảo vệ",
+        "Kiên định",
+        "Thử thách",
+        "Giữ vững"
+      ],
+      "keywords_reversed": [
+        "Kiệt sức",
+        "Bỏ cuộc",
+        "Bị áp đảo"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Bảo vệ mối quan hệ trước sự phản đối.",
+        "reversed": "Mệt mỏi vì phải chứng minh mãi."
+      },
+      "career": {
+        "upright": "Giữ vững vị trí trước cạnh tranh.",
+        "reversed": "Bị áp đảo; cân nhắc lùi một bước."
+      },
+      "finance": {
+        "upright": "Bảo vệ tài sản, giữ nguyên tắc.",
+        "reversed": "Áp lực tài chính quá sức."
+      },
+      "health": {
+        "upright": "Sức bền tốt.",
+        "reversed": "Kiệt sức; cần nghỉ."
+      },
+      "advice": "Đứng vững với điều bạn tin.",
+      "imagery": "Người đứng trên đỉnh đồi cầm gậy chống lại sáu cây gậy từ dưới đâm lên."
+    }
   },
   {
     "slug": "eight-of-wands",
@@ -327,7 +1400,44 @@
     "number": 8,
     "upright_meaning": "Tiến độ nhanh, tin tức đến dồn dập và hành động thuận lợi.",
     "reversed_meaning": "Chậm trễ, hiểu lầm, hoặc vội vàng gây sai sót.",
-    "image_url": "/cards/eight-of-wands.webp"
+    "image_url": "/cards/eight-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Tốc độ",
+        "Hành động",
+        "Tin tức",
+        "Tiến nhanh"
+      ],
+      "keywords_reversed": [
+        "Chậm trễ",
+        "Vội vàng",
+        "Hiểu lầm"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Tình cảm tiến nhanh, tin nhắn bất ngờ.",
+        "reversed": "Hiểu lầm do giao tiếp vội."
+      },
+      "career": {
+        "upright": "Mọi việc tiến nhanh; tin tốt đến.",
+        "reversed": "Trì hoãn hoặc vội vàng mà sai."
+      },
+      "finance": {
+        "upright": "Dòng tiền chuyển động nhanh.",
+        "reversed": "Thanh toán chậm."
+      },
+      "health": {
+        "upright": "Hồi phục nhanh.",
+        "reversed": "Bồn chồn, thiếu nghỉ ngơi."
+      },
+      "advice": "Khi mọi thứ chuyển động, hãy theo kịp nhưng đừng vấp.",
+      "imagery": "Tám cây gậy bay chéo qua bầu trời trong xanh trên cánh đồng."
+    }
   },
   {
     "slug": "nine-of-wands",
@@ -338,7 +1448,44 @@
     "number": 9,
     "upright_meaning": "Kiên cường sau nhiều thử thách, gần đến đích nhưng cần thêm sức bền.",
     "reversed_meaning": "Kiệt sức, phòng thủ quá mức hoặc muốn dừng lại.",
-    "image_url": "/cards/nine-of-wands.webp"
+    "image_url": "/cards/nine-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Kiên cường",
+        "Bền bỉ",
+        "Cảnh giác",
+        "Gần đích"
+      ],
+      "keywords_reversed": [
+        "Kiệt sức",
+        "Đa nghi",
+        "Muốn bỏ cuộc"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Từng tổn thương nên dè dặt; hãy cho mình cơ hội.",
+        "reversed": "Phòng thủ quá mức khiến người khác khó lại gần."
+      },
+      "career": {
+        "upright": "Gần về đích; cố thêm chút nữa.",
+        "reversed": "Kiệt sức, cần hỗ trợ."
+      },
+      "finance": {
+        "upright": "Cẩn trọng giữ tài chính.",
+        "reversed": "Mệt mỏi vì nợ nần."
+      },
+      "health": {
+        "upright": "Sức bền đáng nể nhưng cần nghỉ.",
+        "reversed": "Kiệt quệ; đừng gồng."
+      },
+      "advice": "Bạn đã đi rất xa; một bước nữa thôi.",
+      "imagery": "Người đàn ông băng đầu tựa vào cây gậy, phía sau là tám cây gậy như hàng rào."
+    }
   },
   {
     "slug": "ten-of-wands",
@@ -349,7 +1496,44 @@
     "number": 10,
     "upright_meaning": "Gánh quá nhiều trách nhiệm; nỗ lực lớn sắp hoàn thành.",
     "reversed_meaning": "Học cách buông bớt, ủy thác công việc, hoặc gục ngã vì quá tải.",
-    "image_url": "/cards/ten-of-wands.webp"
+    "image_url": "/cards/ten-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Gánh nặng",
+        "Trách nhiệm",
+        "Áp lực",
+        "Cố gắng"
+      ],
+      "keywords_reversed": [
+        "Buông bớt",
+        "Ủy thác",
+        "Gục ngã"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Gánh vác một mình trong mối quan hệ; cần chia sẻ.",
+        "reversed": "Học cách buông bớt trách nhiệm."
+      },
+      "career": {
+        "upright": "Ôm quá nhiều việc.",
+        "reversed": "Ủy thác bớt hoặc sắp kiệt sức."
+      },
+      "finance": {
+        "upright": "Gánh nặng tài chính.",
+        "reversed": "Dần nhẹ gánh nợ."
+      },
+      "health": {
+        "upright": "Căng thẳng, đau lưng vai.",
+        "reversed": "Nghỉ ngơi, giảm tải."
+      },
+      "advice": "Bạn không cần ôm hết mọi thứ.",
+      "imagery": "Người đàn ông còng lưng ôm mười cây gậy, che cả tầm nhìn, bước về phía ngôi làng."
+    }
   },
   {
     "slug": "page-of-wands",
@@ -360,7 +1544,44 @@
     "number": 11,
     "upright_meaning": "Tin tức hoặc ý tưởng mới đầy hứng khởi; tò mò và dám thử.",
     "reversed_meaning": "Thiếu kiên nhẫn, ý tưởng còn non nớt, tin tức chưa thành hiện thực.",
-    "image_url": "/cards/page-of-wands.webp"
+    "image_url": "/cards/page-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Nhiệt huyết",
+        "Khám phá",
+        "Tin tức",
+        "Tò mò"
+      ],
+      "keywords_reversed": [
+        "Thiếu định hướng",
+        "Nóng vội",
+        "Trì hoãn"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Tình cảm vui tươi, tin nhắn đầy hứng khởi.",
+        "reversed": "Hứng thú nhanh, chóng chán."
+      },
+      "career": {
+        "upright": "Ý tưởng mới, cơ hội học hỏi.",
+        "reversed": "Nhiều ý tưởng nhưng không làm."
+      },
+      "finance": {
+        "upright": "Cơ hội tài chính nhỏ.",
+        "reversed": "Chi tiêu bốc đồng."
+      },
+      "health": {
+        "upright": "Năng lượng trẻ trung.",
+        "reversed": "Thiếu kiên trì luyện tập."
+      },
+      "advice": "Tò mò là khởi đầu tốt; giờ hãy theo đuổi.",
+      "imagery": "Chàng trai trẻ đứng trên sa mạc ngắm cây gậy đâm chồi, áo có hoa văn kỳ nhông."
+    }
   },
   {
     "slug": "knight-of-wands",
@@ -371,7 +1592,44 @@
     "number": 12,
     "upright_meaning": "Hành động nhanh, đầy đam mê và phiêu lưu.",
     "reversed_meaning": "Bốc đồng, thiếu kiên trì, nóng vội dẫn đến sai lầm.",
-    "image_url": "/cards/knight-of-wands.webp"
+    "image_url": "/cards/knight-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Hành động",
+        "Phiêu lưu",
+        "Đam mê",
+        "Bốc đồng"
+      ],
+      "keywords_reversed": [
+        "Nóng nảy",
+        "Liều lĩnh",
+        "Bỏ dở"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Người nồng nhiệt, cuốn hút nhưng có thể thiếu bền.",
+        "reversed": "Bốc đồng, dễ đến dễ đi."
+      },
+      "career": {
+        "upright": "Hành động mạnh mẽ, chuyển việc hoặc đi xa.",
+        "reversed": "Vội vàng bỏ dở giữa chừng."
+      },
+      "finance": {
+        "upright": "Chi tiêu mạo hiểm.",
+        "reversed": "Mất tiền vì liều."
+      },
+      "health": {
+        "upright": "Năng động, thích vận động.",
+        "reversed": "Chấn thương do vội."
+      },
+      "advice": "Lao về phía trước, nhưng biết nơi mình muốn đến.",
+      "imagery": "Hiệp sĩ trên chiến mã đang chồm lên, tay cầm gậy, áo hoa văn kỳ nhông."
+    }
   },
   {
     "slug": "queen-of-wands",
@@ -382,7 +1640,44 @@
     "number": 13,
     "upright_meaning": "Tự tin, ấm áp, quyến rũ và quyết đoán; truyền cảm hứng cho người khác.",
     "reversed_meaning": "Ghen tị, hay đòi hỏi, thiếu tự tin hoặc nóng nảy.",
-    "image_url": "/cards/queen-of-wands.webp"
+    "image_url": "/cards/queen-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Tự tin",
+        "Ấm áp",
+        "Quyết đoán",
+        "Thu hút"
+      ],
+      "keywords_reversed": [
+        "Ghen tuông",
+        "Đòi hỏi",
+        "Thiếu tự tin"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Tự tin, cuốn hút; tình cảm nồng ấm.",
+        "reversed": "Ghen tuông, muốn kiểm soát."
+      },
+      "career": {
+        "upright": "Lãnh đạo bằng nhiệt huyết, được tín nhiệm.",
+        "reversed": "Quá tải, nóng tính."
+      },
+      "finance": {
+        "upright": "Quản lý tiền tự tin.",
+        "reversed": "Tiêu để thể hiện."
+      },
+      "health": {
+        "upright": "Sức sống mạnh mẽ.",
+        "reversed": "Kiệt sức vì làm quá nhiều."
+      },
+      "advice": "Hãy tỏa sáng mà không cần ai cho phép.",
+      "imagery": "Nữ hoàng ngồi trên ngai có sư tử, tay cầm hoa hướng dương, dưới chân có mèo đen."
+    }
   },
   {
     "slug": "king-of-wands",
@@ -393,7 +1688,44 @@
     "number": 14,
     "upright_meaning": "Lãnh đạo có tầm nhìn, chủ động và dám chịu trách nhiệm.",
     "reversed_meaning": "Độc đoán, nóng vội, kỳ vọng quá cao ở người khác.",
-    "image_url": "/cards/king-of-wands.webp"
+    "image_url": "/cards/king-of-wands.webp",
+    "details": {
+      "keywords_upright": [
+        "Lãnh đạo",
+        "Tầm nhìn",
+        "Táo bạo",
+        "Truyền cảm hứng"
+      ],
+      "keywords_reversed": [
+        "Độc đoán",
+        "Nóng nảy",
+        "Kỳ vọng quá cao"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Lửa",
+      "astrology": null,
+      "love": {
+        "upright": "Người bạn đời mạnh mẽ, có tầm nhìn.",
+        "reversed": "Áp đặt, nóng nảy."
+      },
+      "career": {
+        "upright": "Lãnh đạo, khởi nghiệp thành công.",
+        "reversed": "Độc đoán, kỳ vọng phi thực tế."
+      },
+      "finance": {
+        "upright": "Đầu tư có tầm nhìn.",
+        "reversed": "Mạo hiểm quá đà."
+      },
+      "health": {
+        "upright": "Năng lượng tốt.",
+        "reversed": "Căng thẳng vì tham vọng."
+      },
+      "advice": "Dẫn đường bằng tầm nhìn, không bằng áp lực.",
+      "imagery": "Nhà vua ngồi trên ngai khắc sư tử và kỳ nhông, tay cầm gậy đâm chồi."
+    }
   },
   {
     "slug": "ace-of-cups",
@@ -404,7 +1736,44 @@
     "number": 1,
     "upright_meaning": "Cảm xúc mới, tình yêu hoặc lòng biết ơn tràn đầy; khởi đầu từ trái tim.",
     "reversed_meaning": "Cảm xúc bị nén, ngần ngại mở lòng, hoặc cảm giác trống rỗng.",
-    "image_url": "/cards/ace-of-cups.webp"
+    "image_url": "/cards/ace-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Yêu thương",
+        "Cảm xúc mới",
+        "Trực giác",
+        "Chữa lành"
+      ],
+      "keywords_reversed": [
+        "Kìm nén",
+        "Trống rỗng",
+        "Khép lòng"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Tình yêu mới chớm hoặc cảm xúc dâng tràn.",
+        "reversed": "Cảm xúc bị kìm nén."
+      },
+      "career": {
+        "upright": "Công việc mang lại niềm vui, sáng tạo.",
+        "reversed": "Mất hứng thú với công việc."
+      },
+      "finance": {
+        "upright": "Tài chính êm đềm, có quà.",
+        "reversed": "Chi tiêu vì cảm xúc."
+      },
+      "health": {
+        "upright": "Chữa lành cảm xúc.",
+        "reversed": "Mệt mỏi tinh thần."
+      },
+      "advice": "Mở lòng để đón nhận yêu thương.",
+      "imagery": "Bàn tay hiện ra từ mây nâng chiếc cốc tràn nước, chim bồ câu ngậm bánh thánh."
+    }
   },
   {
     "slug": "two-of-cups",
@@ -415,7 +1784,44 @@
     "number": 2,
     "upright_meaning": "Kết nối hai chiều, hòa hợp giữa hai người và sự tôn trọng lẫn nhau.",
     "reversed_meaning": "Mất cân bằng trong quan hệ, hiểu lầm hoặc chia tách.",
-    "image_url": "/cards/two-of-cups.webp"
+    "image_url": "/cards/two-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Kết đôi",
+        "Đồng điệu",
+        "Hợp tác",
+        "Tương hỗ"
+      ],
+      "keywords_reversed": [
+        "Rạn nứt",
+        "Mất cân bằng",
+        "Hiểu lầm"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Kết nối đôi lứa, tình cảm hai chiều.",
+        "reversed": "Bất hòa, mất kết nối."
+      },
+      "career": {
+        "upright": "Hợp tác thuận lợi.",
+        "reversed": "Đối tác bất đồng."
+      },
+      "finance": {
+        "upright": "Hợp tác tài chính tốt.",
+        "reversed": "Tranh chấp tiền với đối tác."
+      },
+      "health": {
+        "upright": "Cân bằng cảm xúc.",
+        "reversed": "Căng thẳng vì quan hệ."
+      },
+      "advice": "Tôn trọng là nền tảng của mọi sự gắn bó.",
+      "imagery": "Đôi nam nữ trao cốc cho nhau, trên đầu là biểu tượng gậy Hermes có đầu sư tử cánh."
+    }
   },
   {
     "slug": "three-of-cups",
@@ -426,7 +1832,44 @@
     "number": 3,
     "upright_meaning": "Niềm vui bên bạn bè, ăn mừng và sự hỗ trợ của cộng đồng.",
     "reversed_meaning": "Quá đà trong tiệc tùng, tin đồn, hoặc bị cô lập khỏi nhóm.",
-    "image_url": "/cards/three-of-cups.webp"
+    "image_url": "/cards/three-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Tình bạn",
+        "Ăn mừng",
+        "Cộng đồng",
+        "Niềm vui"
+      ],
+      "keywords_reversed": [
+        "Tiệc tùng quá đà",
+        "Người thứ ba",
+        "Cô lập"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Vui vẻ, được bạn bè ủng hộ.",
+        "reversed": "Người thứ ba hoặc tin đồn."
+      },
+      "career": {
+        "upright": "Làm việc nhóm hiệu quả.",
+        "reversed": "Nội bộ lục đục."
+      },
+      "finance": {
+        "upright": "Có khoản thu đáng mừng.",
+        "reversed": "Chi cho ăn chơi quá đà."
+      },
+      "health": {
+        "upright": "Tinh thần phấn chấn.",
+        "reversed": "Ăn uống, tiệc tùng quá mức."
+      },
+      "advice": "Ăn mừng cùng những người thật lòng với bạn.",
+      "imagery": "Ba người phụ nữ nâng cốc nhảy múa giữa vườn hoa quả."
+    }
   },
   {
     "slug": "four-of-cups",
@@ -437,7 +1880,44 @@
     "number": 4,
     "upright_meaning": "Thờ ơ, chán nản hoặc mải suy nghĩ mà bỏ lỡ cơ hội trước mắt.",
     "reversed_meaning": "Thoát khỏi sự uể oải, nhận ra điều đã bỏ lỡ và đón nhận lại.",
-    "image_url": "/cards/four-of-cups.webp"
+    "image_url": "/cards/four-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Thờ ơ",
+        "Chán nản",
+        "Suy ngẫm",
+        "Bỏ lỡ"
+      ],
+      "keywords_reversed": [
+        "Thức tỉnh",
+        "Đón nhận",
+        "Động lực mới"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Chán nản, không thấy điều tốt trước mắt.",
+        "reversed": "Bắt đầu mở lòng trở lại."
+      },
+      "career": {
+        "upright": "Mất động lực, bỏ lỡ cơ hội.",
+        "reversed": "Nhận ra cơ hội mới."
+      },
+      "finance": {
+        "upright": "Bỏ qua cơ hội kiếm tiền.",
+        "reversed": "Tìm ra hướng mới."
+      },
+      "health": {
+        "upright": "Uể oải, thiếu năng lượng.",
+        "reversed": "Dần lấy lại năng lượng."
+      },
+      "advice": "Hãy nhìn lên, có một chiếc cốc đang được trao cho bạn.",
+      "imagery": "Người ngồi khoanh tay dưới gốc cây, trước mặt ba chiếc cốc, một bàn tay từ mây đưa thêm cốc thứ tư."
+    }
   },
   {
     "slug": "five-of-cups",
@@ -448,7 +1928,44 @@
     "number": 5,
     "upright_meaning": "Tiếc nuối, mất mát và chỉ nhìn vào điều đã đổ vỡ trong khi vẫn còn điều giữ lại được.",
     "reversed_meaning": "Bắt đầu chấp nhận, hàn gắn và nhìn về phía trước.",
-    "image_url": "/cards/five-of-cups.webp"
+    "image_url": "/cards/five-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Mất mát",
+        "Tiếc nuối",
+        "Đau buồn",
+        "Thất vọng"
+      ],
+      "keywords_reversed": [
+        "Chấp nhận",
+        "Hồi phục",
+        "Bước tiếp"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Đau buồn vì mất mát hoặc chia tay.",
+        "reversed": "Dần vượt qua, mở lòng lại."
+      },
+      "career": {
+        "upright": "Thất vọng vì dự án thất bại.",
+        "reversed": "Rút kinh nghiệm, làm lại."
+      },
+      "finance": {
+        "upright": "Mất tiền, tiếc nuối.",
+        "reversed": "Dần lấy lại cân bằng."
+      },
+      "health": {
+        "upright": "Buồn bã ảnh hưởng sức khỏe.",
+        "reversed": "Hồi phục tinh thần."
+      },
+      "advice": "Hai chiếc cốc vẫn còn đứng sau lưng bạn.",
+      "imagery": "Người mặc áo choàng đen cúi nhìn ba chiếc cốc đổ, sau lưng còn hai chiếc nguyên vẹn."
+    }
   },
   {
     "slug": "six-of-cups",
@@ -459,7 +1976,44 @@
     "number": 6,
     "upright_meaning": "Hoài niệm, ký ức đẹp, sự tử tế và những kết nối cũ.",
     "reversed_meaning": "Mắc kẹt trong quá khứ, lý tưởng hóa ngày xưa hoặc khó trưởng thành.",
-    "image_url": "/cards/six-of-cups.webp"
+    "image_url": "/cards/six-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Hoài niệm",
+        "Tuổi thơ",
+        "Ngây thơ",
+        "Kỷ niệm"
+      ],
+      "keywords_reversed": [
+        "Sống trong quá khứ",
+        "Trưởng thành",
+        "Buông bỏ"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Người cũ quay lại hoặc tình cảm trong sáng.",
+        "reversed": "Níu kéo quá khứ."
+      },
+      "career": {
+        "upright": "Kỹ năng cũ có ích, gặp lại người quen.",
+        "reversed": "Không chịu đổi mới."
+      },
+      "finance": {
+        "upright": "Nhận hỗ trợ từ gia đình.",
+        "reversed": "Tiêu vì hoài niệm."
+      },
+      "health": {
+        "upright": "Thư thái, vui vẻ.",
+        "reversed": "Gánh nặng cảm xúc cũ."
+      },
+      "advice": "Trân trọng quá khứ, nhưng đừng sống ở đó.",
+      "imagery": "Cậu bé trao cho bé gái chiếc cốc cắm hoa trong sân một ngôi nhà cổ."
+    }
   },
   {
     "slug": "seven-of-cups",
@@ -470,7 +2024,44 @@
     "number": 7,
     "upright_meaning": "Nhiều lựa chọn, mơ mộng và ảo tưởng; cần phân biệt điều thực tế.",
     "reversed_meaning": "Bắt đầu thấy rõ lựa chọn và quyết định dứt khoát, hoặc vẫn rối giữa nhiều hướng.",
-    "image_url": "/cards/seven-of-cups.webp"
+    "image_url": "/cards/seven-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Lựa chọn",
+        "Ảo tưởng",
+        "Mơ mộng",
+        "Cám dỗ"
+      ],
+      "keywords_reversed": [
+        "Tỉnh táo",
+        "Quyết định rõ",
+        "Thực tế"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "yes"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Nhiều lựa chọn, dễ ảo tưởng.",
+        "reversed": "Nhìn rõ điều mình thực sự muốn."
+      },
+      "career": {
+        "upright": "Quá nhiều ý tưởng, khó chọn.",
+        "reversed": "Tập trung vào một hướng."
+      },
+      "finance": {
+        "upright": "Cẩn thận ảo tưởng làm giàu.",
+        "reversed": "Thực tế hơn về tiền."
+      },
+      "health": {
+        "upright": "Mơ màng, thiếu tập trung.",
+        "reversed": "Tỉnh táo, cải thiện."
+      },
+      "advice": "Không phải mọi chiếc cốc đều chứa điều bạn nghĩ.",
+      "imagery": "Người đứng trước bảy chiếc cốc lơ lửng trong mây, mỗi chiếc chứa một thứ kỳ lạ."
+    }
   },
   {
     "slug": "eight-of-cups",
@@ -481,7 +2072,44 @@
     "number": 8,
     "upright_meaning": "Rời bỏ điều không còn làm mình thỏa mãn để đi tìm ý nghĩa sâu hơn.",
     "reversed_meaning": "Do dự ra đi, quay lại điều cũ hoặc trốn tránh vấn đề.",
-    "image_url": "/cards/eight-of-cups.webp"
+    "image_url": "/cards/eight-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Rời đi",
+        "Tìm ý nghĩa",
+        "Buông bỏ",
+        "Hành trình"
+      ],
+      "keywords_reversed": [
+        "Sợ rời đi",
+        "Lưỡng lự",
+        "Quay lại"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Rời bỏ mối quan hệ không còn ý nghĩa.",
+        "reversed": "Lưỡng lự, sợ đi."
+      },
+      "career": {
+        "upright": "Rời việc để tìm ý nghĩa hơn.",
+        "reversed": "Mắc kẹt vì sợ thay đổi."
+      },
+      "finance": {
+        "upright": "Từ bỏ khoản đầu tư không hiệu quả.",
+        "reversed": "Tiếc tiền nên chần chừ."
+      },
+      "health": {
+        "upright": "Cần nghỉ ngơi, thay đổi môi trường.",
+        "reversed": "Kiệt sức vì níu giữ."
+      },
+      "advice": "Ra đi không phải là thất bại khi điều cũ đã cạn.",
+      "imagery": "Người khoác áo đỏ quay lưng với tám chiếc cốc, đi về phía núi dưới ánh trăng."
+    }
   },
   {
     "slug": "nine-of-cups",
@@ -492,7 +2120,44 @@
     "number": 9,
     "upright_meaning": "Hài lòng, điều ước thành hiện thực và cảm giác thoải mái.",
     "reversed_meaning": "Hài lòng giả tạo, tham muốn vật chất hoặc thiếu thỏa mãn thật sự.",
-    "image_url": "/cards/nine-of-cups.webp"
+    "image_url": "/cards/nine-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Mãn nguyện",
+        "Ước nguyện",
+        "Hạnh phúc",
+        "Đủ đầy"
+      ],
+      "keywords_reversed": [
+        "Tự mãn",
+        "Không hài lòng",
+        "Hưởng thụ quá mức"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Ước nguyện thành, tình cảm viên mãn.",
+        "reversed": "Kỳ vọng phi thực tế."
+      },
+      "career": {
+        "upright": "Đạt điều mong muốn.",
+        "reversed": "Hài lòng giả tạo."
+      },
+      "finance": {
+        "upright": "Tài chính dư dả.",
+        "reversed": "Hưởng thụ quá đà."
+      },
+      "health": {
+        "upright": "Khỏe mạnh, vui vẻ.",
+        "reversed": "Ăn uống quá mức."
+      },
+      "advice": "Hãy tận hưởng điều ước vừa thành.",
+      "imagery": "Người đàn ông khoanh tay mãn nguyện, phía sau là chín chiếc cốc xếp hàng."
+    }
   },
   {
     "slug": "ten-of-cups",
@@ -503,7 +2168,44 @@
     "number": 10,
     "upright_meaning": "Hạnh phúc gia đình, sự trọn vẹn về cảm xúc và hòa hợp lâu dài.",
     "reversed_meaning": "Rạn nứt trong gia đình, kỳ vọng không khớp, hạnh phúc chưa trọn vẹn.",
-    "image_url": "/cards/ten-of-cups.webp"
+    "image_url": "/cards/ten-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Gia đình",
+        "Hạnh phúc",
+        "Hòa thuận",
+        "Viên mãn"
+      ],
+      "keywords_reversed": [
+        "Bất hòa gia đình",
+        "Mất kết nối",
+        "Kỳ vọng sai"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Hạnh phúc gia đình, tình cảm bền vững.",
+        "reversed": "Bất hòa, mất kết nối."
+      },
+      "career": {
+        "upright": "Môi trường làm việc như gia đình.",
+        "reversed": "Mất cân bằng công việc và gia đình."
+      },
+      "finance": {
+        "upright": "Ổn định, đủ đầy cho gia đình.",
+        "reversed": "Bất đồng tiền bạc trong nhà."
+      },
+      "health": {
+        "upright": "Bình an, khỏe mạnh.",
+        "reversed": "Căng thẳng gia đình."
+      },
+      "advice": "Hạnh phúc là những người đang ở cạnh bạn.",
+      "imagery": "Đôi vợ chồng dang tay dưới cầu vồng mười chiếc cốc, hai đứa trẻ nhảy múa."
+    }
   },
   {
     "slug": "page-of-cups",
@@ -514,7 +2216,44 @@
     "number": 11,
     "upright_meaning": "Thông điệp tình cảm, trực giác nhẹ nhàng và sự sáng tạo ngây thơ.",
     "reversed_meaning": "Quá nhạy cảm, non nớt về cảm xúc hoặc tin nhắn không như mong đợi.",
-    "image_url": "/cards/page-of-cups.webp"
+    "image_url": "/cards/page-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Ngây thơ",
+        "Sáng tạo",
+        "Tin vui",
+        "Nhạy cảm"
+      ],
+      "keywords_reversed": [
+        "Non nớt",
+        "Mơ mộng",
+        "Cảm xúc thất thường"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Lời tỏ tình bất ngờ, tình cảm trong sáng.",
+        "reversed": "Cảm xúc thất thường."
+      },
+      "career": {
+        "upright": "Ý tưởng sáng tạo, tin tốt.",
+        "reversed": "Thiếu nghiêm túc."
+      },
+      "finance": {
+        "upright": "Khoản tiền bất ngờ nhỏ.",
+        "reversed": "Chi tiêu vì cảm xúc."
+      },
+      "health": {
+        "upright": "Tinh thần nhẹ nhàng.",
+        "reversed": "Nhạy cảm, dễ buồn."
+      },
+      "advice": "Để trí tưởng tượng dẫn lối.",
+      "imagery": "Chàng trai trẻ nhìn chú cá nhô lên từ chiếc cốc."
+    }
   },
   {
     "slug": "knight-of-cups",
@@ -525,7 +2264,44 @@
     "number": 12,
     "upright_meaning": "Lời tỏ tình hoặc đề nghị lãng mạn; theo đuổi bằng trái tim.",
     "reversed_meaning": "Hứa hẹn suông, lý tưởng hóa quá mức hoặc thất thường về cảm xúc.",
-    "image_url": "/cards/knight-of-cups.webp"
+    "image_url": "/cards/knight-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Lãng mạn",
+        "Lời mời",
+        "Quyến rũ",
+        "Lý tưởng"
+      ],
+      "keywords_reversed": [
+        "Hứa suông",
+        "Thất thường",
+        "Ảo tưởng"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Người lãng mạn, lời mời hẹn hò.",
+        "reversed": "Hứa hẹn thiếu thực tế."
+      },
+      "career": {
+        "upright": "Đề nghị hấp dẫn.",
+        "reversed": "Thiếu thực tế."
+      },
+      "finance": {
+        "upright": "Đề xuất tài chính hấp dẫn.",
+        "reversed": "Lời mời quá đẹp."
+      },
+      "health": {
+        "upright": "Tinh thần tốt.",
+        "reversed": "Cảm xúc thất thường."
+      },
+      "advice": "Theo trái tim, nhưng giữ đầu óc tỉnh táo.",
+      "imagery": "Hiệp sĩ cưỡi ngựa trắng thong thả, tay cầm chiếc cốc như dâng lời mời."
+    }
   },
   {
     "slug": "queen-of-cups",
@@ -536,7 +2312,44 @@
     "number": 13,
     "upright_meaning": "Đồng cảm, nuôi dưỡng và trực giác tinh tế; hiểu cảm xúc của mình và của người khác.",
     "reversed_meaning": "Quá lệ thuộc cảm xúc, hy sinh bản thân hoặc dễ bị cảm xúc cuốn đi.",
-    "image_url": "/cards/queen-of-cups.webp"
+    "image_url": "/cards/queen-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Thấu cảm",
+        "Dịu dàng",
+        "Trực giác",
+        "Nuôi dưỡng"
+      ],
+      "keywords_reversed": [
+        "Phụ thuộc cảm xúc",
+        "Quá nhạy cảm",
+        "Hy sinh bản thân"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Thấu hiểu, yêu thương chân thành.",
+        "reversed": "Phụ thuộc cảm xúc."
+      },
+      "career": {
+        "upright": "Làm tốt công việc chăm sóc, sáng tạo.",
+        "reversed": "Quá tải cảm xúc."
+      },
+      "finance": {
+        "upright": "Chi tiêu tình cảm.",
+        "reversed": "Thiếu nguyên tắc tài chính."
+      },
+      "health": {
+        "upright": "Chăm sóc tinh thần.",
+        "reversed": "Kiệt sức vì lo cho người khác."
+      },
+      "advice": "Lòng trắc ẩn bắt đầu từ chính bạn.",
+      "imagery": "Nữ hoàng ngồi bên bờ biển, ngắm chiếc cốc có nắp được trang trí công phu."
+    }
   },
   {
     "slug": "king-of-cups",
@@ -547,7 +2360,44 @@
     "number": 14,
     "upright_meaning": "Làm chủ cảm xúc, điềm tĩnh và có lòng trắc ẩn khi dẫn dắt.",
     "reversed_meaning": "Kìm nén cảm xúc, thao túng bằng tình cảm hoặc thiếu ổn định nội tâm.",
-    "image_url": "/cards/king-of-cups.webp"
+    "image_url": "/cards/king-of-cups.webp",
+    "details": {
+      "keywords_upright": [
+        "Điềm tĩnh",
+        "Bao dung",
+        "Cân bằng",
+        "Khôn ngoan"
+      ],
+      "keywords_reversed": [
+        "Thao túng cảm xúc",
+        "Lạnh lùng",
+        "Thất thường"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Nước",
+      "astrology": null,
+      "love": {
+        "upright": "Người bạn đời điềm tĩnh, chín chắn.",
+        "reversed": "Lạnh lùng hoặc thao túng."
+      },
+      "career": {
+        "upright": "Lãnh đạo bằng sự thấu hiểu.",
+        "reversed": "Kìm nén cảm xúc."
+      },
+      "finance": {
+        "upright": "Ổn định, khôn ngoan.",
+        "reversed": "Chi vì cảm xúc."
+      },
+      "health": {
+        "upright": "Cân bằng thân tâm.",
+        "reversed": "Kìm nén gây căng thẳng."
+      },
+      "advice": "Giữ đầu lạnh và trái tim ấm.",
+      "imagery": "Nhà vua ngồi trên ngai giữa biển động, tay cầm cốc và quyền trượng."
+    }
   },
   {
     "slug": "ace-of-swords",
@@ -558,7 +2408,44 @@
     "number": 1,
     "upright_meaning": "Sự rõ ràng đột ngột, sự thật và bước đột phá về tư duy.",
     "reversed_meaning": "Đầu óc rối, quyết định thiếu sáng suốt hoặc lời nói gây tổn thương.",
-    "image_url": "/cards/ace-of-swords.webp"
+    "image_url": "/cards/ace-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Sáng suốt",
+        "Sự thật",
+        "Đột phá",
+        "Quyết đoán"
+      ],
+      "keywords_reversed": [
+        "Rối trí",
+        "Thông tin sai",
+        "Nói lời làm tổn thương"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Nói thẳng, rõ ràng trong tình cảm.",
+        "reversed": "Lời nói gây tổn thương."
+      },
+      "career": {
+        "upright": "Ý tưởng đột phá, quyết định sáng suốt.",
+        "reversed": "Rối trí, thiếu thông tin."
+      },
+      "finance": {
+        "upright": "Quyết định tài chính rõ ràng.",
+        "reversed": "Thông tin sai lệch."
+      },
+      "health": {
+        "upright": "Đầu óc minh mẫn.",
+        "reversed": "Căng thẳng, đau đầu."
+      },
+      "advice": "Sự thật cắt xuyên mọi sương mù.",
+      "imagery": "Bàn tay từ mây nắm thanh kiếm dựng đứng, đầu kiếm xuyên qua vương miện."
+    }
   },
   {
     "slug": "two-of-swords",
@@ -569,7 +2456,44 @@
     "number": 2,
     "upright_meaning": "Bế tắc, đứng giữa hai lựa chọn khó và chưa muốn nhìn sự thật.",
     "reversed_meaning": "Thông tin bị che giấu, quyết định gấp gáp, hoặc thoát khỏi thế bế tắc.",
-    "image_url": "/cards/two-of-swords.webp"
+    "image_url": "/cards/two-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Bế tắc",
+        "Do dự",
+        "Lựa chọn khó",
+        "Né tránh"
+      ],
+      "keywords_reversed": [
+        "Quyết định",
+        "Quá tải thông tin",
+        "Đối mặt"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Né tránh cảm xúc, khó quyết định.",
+        "reversed": "Buộc phải đối mặt."
+      },
+      "career": {
+        "upright": "Bế tắc trước hai lựa chọn.",
+        "reversed": "Quá tải thông tin."
+      },
+      "finance": {
+        "upright": "Do dự về tài chính.",
+        "reversed": "Phải quyết định."
+      },
+      "health": {
+        "upright": "Căng thẳng do dồn nén.",
+        "reversed": "Bắt đầu giải tỏa."
+      },
+      "advice": "Tháo khăn bịt mắt; nhìn thẳng vào lựa chọn.",
+      "imagery": "Người phụ nữ bịt mắt ngồi bắt chéo hai thanh kiếm trước ngực, sau lưng là biển."
+    }
   },
   {
     "slug": "three-of-swords",
@@ -580,7 +2504,44 @@
     "number": 3,
     "upright_meaning": "Đau lòng, mất mát và một sự thật khó chấp nhận.",
     "reversed_meaning": "Dần hồi phục, tha thứ, hoặc nén nỗi đau lại.",
-    "image_url": "/cards/three-of-swords.webp"
+    "image_url": "/cards/three-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Đau lòng",
+        "Tổn thương",
+        "Chia ly",
+        "Sự thật phũ phàng"
+      ],
+      "keywords_reversed": [
+        "Chữa lành",
+        "Tha thứ",
+        "Vượt qua"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Đau lòng, phản bội hoặc chia tay.",
+        "reversed": "Dần chữa lành."
+      },
+      "career": {
+        "upright": "Thất vọng, bị chỉ trích.",
+        "reversed": "Vượt qua tổn thương."
+      },
+      "finance": {
+        "upright": "Mất mát tài chính.",
+        "reversed": "Hồi phục dần."
+      },
+      "health": {
+        "upright": "Đau buồn ảnh hưởng tim mạch, giấc ngủ.",
+        "reversed": "Tinh thần hồi phục."
+      },
+      "advice": "Cho phép mình buồn, rồi để vết thương lành.",
+      "imagery": "Trái tim đỏ bị ba thanh kiếm đâm xuyên giữa trời mưa."
+    }
   },
   {
     "slug": "four-of-swords",
@@ -591,7 +2552,44 @@
     "number": 4,
     "upright_meaning": "Nghỉ ngơi, tĩnh tâm và hồi phục sau căng thẳng.",
     "reversed_meaning": "Kiệt sức, quay lại hoạt động quá sớm hoặc né tránh việc nghỉ ngơi.",
-    "image_url": "/cards/four-of-swords.webp"
+    "image_url": "/cards/four-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Nghỉ ngơi",
+        "Hồi phục",
+        "Suy ngẫm",
+        "Tĩnh dưỡng"
+      ],
+      "keywords_reversed": [
+        "Kiệt sức",
+        "Bồn chồn",
+        "Trở lại"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Cần khoảng lặng trong mối quan hệ.",
+        "reversed": "Quay lại sau thời gian xa cách."
+      },
+      "career": {
+        "upright": "Tạm nghỉ để nạp năng lượng.",
+        "reversed": "Làm quá sức, cần dừng."
+      },
+      "finance": {
+        "upright": "Tạm dừng đầu tư.",
+        "reversed": "Vội vàng trở lại."
+      },
+      "health": {
+        "upright": "Nghỉ ngơi, hồi phục.",
+        "reversed": "Kiệt sức, mất ngủ."
+      },
+      "advice": "Nghỉ ngơi cũng là một phần của tiến bộ.",
+      "imagery": "Hiệp sĩ nằm trên quan tài đá, chắp tay, ba thanh kiếm treo trên tường, một thanh dưới thân."
+    }
   },
   {
     "slug": "five-of-swords",
@@ -602,7 +2600,44 @@
     "number": 5,
     "upright_meaning": "Chiến thắng nhưng phải trả giá; xung đột và tính hơn thua.",
     "reversed_meaning": "Hối hận, hòa giải sau xung đột, hoặc từ bỏ cuộc tranh cãi vô ích.",
-    "image_url": "/cards/five-of-swords.webp"
+    "image_url": "/cards/five-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Xung đột",
+        "Thắng bằng mọi giá",
+        "Bất hòa",
+        "Mất mát"
+      ],
+      "keywords_reversed": [
+        "Hòa giải",
+        "Hối hận",
+        "Buông bỏ"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Cãi vã, thắng thua làm tổn thương.",
+        "reversed": "Muốn hòa giải."
+      },
+      "career": {
+        "upright": "Cạnh tranh không lành mạnh.",
+        "reversed": "Rút lui, hòa giải."
+      },
+      "finance": {
+        "upright": "Tranh chấp tiền bạc.",
+        "reversed": "Chấp nhận thiệt để êm."
+      },
+      "health": {
+        "upright": "Căng thẳng.",
+        "reversed": "Giải tỏa áp lực."
+      },
+      "advice": "Thắng một cuộc cãi nhưng mất một người, có đáng không?",
+      "imagery": "Người đàn ông nhặt kiếm, cười nhếch mép, hai người khác buồn bã bỏ đi."
+    }
   },
   {
     "slug": "six-of-swords",
@@ -613,7 +2648,44 @@
     "number": 6,
     "upright_meaning": "Rời xa khó khăn, chuyển sang giai đoạn êm hơn.",
     "reversed_meaning": "Khó buông quá khứ, hành trình bị cản trở hoặc chưa sẵn sàng đi tiếp.",
-    "image_url": "/cards/six-of-swords.webp"
+    "image_url": "/cards/six-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Chuyển tiếp",
+        "Rời đi",
+        "Bình yên dần",
+        "Hồi phục"
+      ],
+      "keywords_reversed": [
+        "Mắc kẹt",
+        "Kháng cự",
+        "Hành trình dang dở"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Vượt qua giai đoạn khó khăn.",
+        "reversed": "Không buông được quá khứ."
+      },
+      "career": {
+        "upright": "Chuyển việc, chuyển nơi làm.",
+        "reversed": "Kế hoạch đi bị trì hoãn."
+      },
+      "finance": {
+        "upright": "Tài chính dần ổn định.",
+        "reversed": "Khó khăn kéo dài."
+      },
+      "health": {
+        "upright": "Hồi phục từ từ.",
+        "reversed": "Chậm hồi phục."
+      },
+      "advice": "Vùng nước lặng đang ở phía trước.",
+      "imagery": "Người lái đò đưa người phụ nữ và đứa trẻ qua sông, sáu thanh kiếm cắm trên thuyền."
+    }
   },
   {
     "slug": "seven-of-swords",
@@ -624,7 +2696,44 @@
     "number": 7,
     "upright_meaning": "Né tránh, mưu mẹo hoặc hành động lén lút; cần cẩn trọng với sự thật.",
     "reversed_meaning": "Bị bại lộ, thú nhận, hoặc quyết định đối mặt thay vì trốn tránh.",
-    "image_url": "/cards/seven-of-swords.webp"
+    "image_url": "/cards/seven-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Lừa dối",
+        "Chiến thuật",
+        "Lén lút",
+        "Né tránh"
+      ],
+      "keywords_reversed": [
+        "Thú nhận",
+        "Bị lộ",
+        "Lương tâm"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Có điều giấu giếm hoặc không chung thủy.",
+        "reversed": "Sự thật lộ ra."
+      },
+      "career": {
+        "upright": "Cẩn thận người không trung thực.",
+        "reversed": "Bị phát hiện, thú nhận."
+      },
+      "finance": {
+        "upright": "Cảnh giác lừa đảo.",
+        "reversed": "Lấy lại được tiền."
+      },
+      "health": {
+        "upright": "Né tránh vấn đề sức khỏe.",
+        "reversed": "Đối mặt và điều trị."
+      },
+      "advice": "Hãy trung thực, kể cả với chính mình.",
+      "imagery": "Người đàn ông rón rén mang năm thanh kiếm rời trại, ngoái nhìn lại."
+    }
   },
   {
     "slug": "eight-of-swords",
@@ -635,7 +2744,44 @@
     "number": 8,
     "upright_meaning": "Cảm giác bị mắc kẹt, bị hạn chế bởi chính suy nghĩ của mình.",
     "reversed_meaning": "Dần thấy lối thoát, tự giải phóng khỏi nỗi sợ.",
-    "image_url": "/cards/eight-of-swords.webp"
+    "image_url": "/cards/eight-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Mắc kẹt",
+        "Tự giới hạn",
+        "Bất lực",
+        "Sợ hãi"
+      ],
+      "keywords_reversed": [
+        "Giải thoát",
+        "Nhận ra",
+        "Tự do"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "yes"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Cảm thấy bị mắc kẹt trong mối quan hệ.",
+        "reversed": "Nhận ra lối thoát."
+      },
+      "career": {
+        "upright": "Bị giới hạn, bế tắc.",
+        "reversed": "Tìm được hướng đi."
+      },
+      "finance": {
+        "upright": "Thấy mình bất lực về tài chính.",
+        "reversed": "Giải quyết được vấn đề."
+      },
+      "health": {
+        "upright": "Lo âu, căng thẳng.",
+        "reversed": "Thoát khỏi lo âu."
+      },
+      "advice": "Dây trói lỏng hơn bạn nghĩ.",
+      "imagery": "Người phụ nữ bị bịt mắt, trói lỏng, đứng giữa tám thanh kiếm cắm quanh."
+    }
   },
   {
     "slug": "nine-of-swords",
@@ -646,7 +2792,44 @@
     "number": 9,
     "upright_meaning": "Lo âu, mất ngủ và nỗi sợ trong đầu lớn hơn thực tế.",
     "reversed_meaning": "Dần giảm lo âu, tìm sự giúp đỡ hoặc đối mặt với nỗi sợ.",
-    "image_url": "/cards/nine-of-swords.webp"
+    "image_url": "/cards/nine-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Lo âu",
+        "Mất ngủ",
+        "Ám ảnh",
+        "Tự trách"
+      ],
+      "keywords_reversed": [
+        "Hy vọng",
+        "Tìm trợ giúp",
+        "Vượt qua"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Lo lắng quá mức về mối quan hệ.",
+        "reversed": "Nỗi lo dịu dần."
+      },
+      "career": {
+        "upright": "Áp lực, sợ thất bại.",
+        "reversed": "Tìm trợ giúp."
+      },
+      "finance": {
+        "upright": "Lo lắng về tiền.",
+        "reversed": "Tình hình bớt căng."
+      },
+      "health": {
+        "upright": "Mất ngủ, lo âu.",
+        "reversed": "Tìm hỗ trợ tâm lý."
+      },
+      "advice": "Nói nỗi lo của bạn ra thành lời; nó sẽ nhỏ lại.",
+      "imagery": "Người ngồi bật dậy trên giường, ôm mặt, chín thanh kiếm treo trên tường tối."
+    }
   },
   {
     "slug": "ten-of-swords",
@@ -657,7 +2840,44 @@
     "number": 10,
     "upright_meaning": "Một kết thúc đau đớn, chạm đáy; cần chấp nhận để bắt đầu lại.",
     "reversed_meaning": "Hồi phục sau tổn thương, điều tồi tệ nhất đã qua, hoặc cố níu kéo điều đã hết.",
-    "image_url": "/cards/ten-of-swords.webp"
+    "image_url": "/cards/ten-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Kết thúc đau đớn",
+        "Chạm đáy",
+        "Phản bội",
+        "Buông xuôi"
+      ],
+      "keywords_reversed": [
+        "Hồi phục",
+        "Tái sinh",
+        "Không thể tệ hơn"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Kết thúc đau đớn.",
+        "reversed": "Bắt đầu hồi phục."
+      },
+      "career": {
+        "upright": "Thất bại, chạm đáy.",
+        "reversed": "Đứng dậy làm lại."
+      },
+      "finance": {
+        "upright": "Thua lỗ nặng.",
+        "reversed": "Phục hồi dần."
+      },
+      "health": {
+        "upright": "Kiệt sức.",
+        "reversed": "Hồi phục chậm."
+      },
+      "advice": "Đáy rồi thì chỉ còn đường đi lên.",
+      "imagery": "Người nằm sấp với mười thanh kiếm cắm lưng, chân trời đang hửng sáng."
+    }
   },
   {
     "slug": "page-of-swords",
@@ -668,7 +2888,44 @@
     "number": 11,
     "upright_meaning": "Tò mò, ham học hỏi và quan sát nhạy bén.",
     "reversed_meaning": "Nói nhiều hơn làm, chỉ trích vô cớ hoặc tin đồn.",
-    "image_url": "/cards/page-of-swords.webp"
+    "image_url": "/cards/page-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Tò mò",
+        "Ham học",
+        "Lanh lợi",
+        "Quan sát"
+      ],
+      "keywords_reversed": [
+        "Nhiều chuyện",
+        "Thiếu suy nghĩ",
+        "Lời nói sắc"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Tìm hiểu nhau qua trò chuyện.",
+        "reversed": "Lời nói làm tổn thương."
+      },
+      "career": {
+        "upright": "Học hỏi, nghiên cứu.",
+        "reversed": "Thiếu kế hoạch."
+      },
+      "finance": {
+        "upright": "Tìm hiểu kỹ trước khi đầu tư.",
+        "reversed": "Tin đồn tài chính."
+      },
+      "health": {
+        "upright": "Tỉnh táo, nhanh nhẹn.",
+        "reversed": "Căng thẳng thần kinh."
+      },
+      "advice": "Đặt câu hỏi, nhưng nghe câu trả lời.",
+      "imagery": "Chàng trai trẻ cầm kiếm đứng trên đồi gió lộng, nhìn về phía xa."
+    }
   },
   {
     "slug": "knight-of-swords",
@@ -679,7 +2936,44 @@
     "number": 12,
     "upright_meaning": "Hành động quyết liệt, tư duy nhanh và thẳng thắn.",
     "reversed_meaning": "Hấp tấp, thiếu cân nhắc hoặc lời nói cứng nhắc làm tổn thương người khác.",
-    "image_url": "/cards/knight-of-swords.webp"
+    "image_url": "/cards/knight-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Quyết liệt",
+        "Tham vọng",
+        "Nhanh",
+        "Thẳng thắn"
+      ],
+      "keywords_reversed": [
+        "Hấp tấp",
+        "Hung hăng",
+        "Vô tâm"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Thẳng thắn, theo đuổi quyết liệt.",
+        "reversed": "Vội vàng, thiếu tinh tế."
+      },
+      "career": {
+        "upright": "Hành động nhanh, quyết đoán.",
+        "reversed": "Hấp tấp sai lầm."
+      },
+      "finance": {
+        "upright": "Quyết định nhanh.",
+        "reversed": "Đầu tư vội."
+      },
+      "health": {
+        "upright": "Năng động.",
+        "reversed": "Căng thẳng do vội."
+      },
+      "advice": "Tốc độ là sức mạnh khi đi đúng hướng.",
+      "imagery": "Hiệp sĩ phi ngựa lao vào gió, giơ cao kiếm, mây bị thổi tung."
+    }
   },
   {
     "slug": "queen-of-swords",
@@ -690,7 +2984,44 @@
     "number": 13,
     "upright_meaning": "Sáng suốt, độc lập, nói thẳng và công bằng.",
     "reversed_meaning": "Lạnh lùng, cay nghiệt hoặc dùng lý lẽ để phòng thủ cảm xúc.",
-    "image_url": "/cards/queen-of-swords.webp"
+    "image_url": "/cards/queen-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Sắc sảo",
+        "Độc lập",
+        "Thẳng thắn",
+        "Khách quan"
+      ],
+      "keywords_reversed": [
+        "Lạnh lùng",
+        "Cay nghiệt",
+        "Khép lòng"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Độc lập, cần sự thấu hiểu.",
+        "reversed": "Lạnh lùng, cay nghiệt."
+      },
+      "career": {
+        "upright": "Sắc sảo, giao tiếp rõ ràng.",
+        "reversed": "Khắt khe quá mức."
+      },
+      "finance": {
+        "upright": "Quản lý tiền khách quan.",
+        "reversed": "Thiếu linh hoạt."
+      },
+      "health": {
+        "upright": "Tinh thần minh mẫn.",
+        "reversed": "Kìm nén cảm xúc."
+      },
+      "advice": "Nói sự thật với lòng tử tế.",
+      "imagery": "Nữ hoàng ngồi nghiêng, giơ kiếm thẳng đứng, tay kia đưa ra như mời gọi."
+    }
   },
   {
     "slug": "king-of-swords",
@@ -701,7 +3032,44 @@
     "number": 14,
     "upright_meaning": "Tư duy logic, đạo đức và thẩm quyền về trí tuệ.",
     "reversed_meaning": "Lạm dụng quyền lực, lạnh lùng hoặc phán xét khắc nghiệt.",
-    "image_url": "/cards/king-of-swords.webp"
+    "image_url": "/cards/king-of-swords.webp",
+    "details": {
+      "keywords_upright": [
+        "Lý trí",
+        "Công minh",
+        "Quyền uy",
+        "Trí tuệ"
+      ],
+      "keywords_reversed": [
+        "Lạm quyền",
+        "Thao túng",
+        "Lạnh lùng"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Khí",
+      "astrology": null,
+      "love": {
+        "upright": "Người lý trí, đáng tin.",
+        "reversed": "Lạnh lùng, kiểm soát."
+      },
+      "career": {
+        "upright": "Lãnh đạo bằng trí tuệ, chuyên môn cao.",
+        "reversed": "Lạm quyền."
+      },
+      "finance": {
+        "upright": "Kế hoạch tài chính logic.",
+        "reversed": "Lợi dụng, gian dối."
+      },
+      "health": {
+        "upright": "Điều trị theo chuyên gia.",
+        "reversed": "Bỏ qua cảm xúc."
+      },
+      "advice": "Để lý trí dẫn đường, nhưng đừng quên con người.",
+      "imagery": "Nhà vua ngồi chính diện trên ngai, cầm kiếm hơi nghiêng, nền trời có bướm và trăng lưỡi liềm."
+    }
   },
   {
     "slug": "ace-of-pentacles",
@@ -712,7 +3080,44 @@
     "number": 1,
     "upright_meaning": "Cơ hội tài chính hoặc công việc mới, nền tảng vật chất vững.",
     "reversed_meaning": "Bỏ lỡ cơ hội, kế hoạch tài chính thiếu thực tế hoặc đầu tư chưa chín muồi.",
-    "image_url": "/cards/ace-of-pentacles.webp"
+    "image_url": "/cards/ace-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Cơ hội",
+        "Thịnh vượng",
+        "Khởi đầu vững",
+        "Hiện thực"
+      ],
+      "keywords_reversed": [
+        "Bỏ lỡ cơ hội",
+        "Kế hoạch kém",
+        "Bất ổn"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "no"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Mối quan hệ ổn định, thực tế.",
+        "reversed": "Thiếu nền tảng."
+      },
+      "career": {
+        "upright": "Cơ hội việc làm, dự án mới.",
+        "reversed": "Bỏ lỡ cơ hội."
+      },
+      "finance": {
+        "upright": "Khoản thu mới, khởi đầu tài chính.",
+        "reversed": "Kế hoạch tài chính kém."
+      },
+      "health": {
+        "upright": "Sức khỏe ổn định.",
+        "reversed": "Lơ là thói quen tốt."
+      },
+      "advice": "Gieo một hạt giống thực tế hôm nay.",
+      "imagery": "Bàn tay từ mây nâng đồng tiền vàng, bên dưới là khu vườn có cổng hoa."
+    }
   },
   {
     "slug": "two-of-pentacles",
@@ -723,7 +3128,44 @@
     "number": 2,
     "upright_meaning": "Cân bằng nhiều việc cùng lúc; linh hoạt với tiền bạc và thời gian.",
     "reversed_meaning": "Quá tải, mất cân bằng hoặc quản lý chi tiêu kém.",
-    "image_url": "/cards/two-of-pentacles.webp"
+    "image_url": "/cards/two-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Cân bằng",
+        "Linh hoạt",
+        "Xoay xở",
+        "Thích nghi"
+      ],
+      "keywords_reversed": [
+        "Quá tải",
+        "Mất cân bằng",
+        "Rối loạn"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Cân bằng thời gian cho tình yêu.",
+        "reversed": "Quá bận nên lơ là nhau."
+      },
+      "career": {
+        "upright": "Xoay xở nhiều việc.",
+        "reversed": "Quá tải."
+      },
+      "finance": {
+        "upright": "Cân đối thu chi.",
+        "reversed": "Mất cân bằng tài chính."
+      },
+      "health": {
+        "upright": "Cân bằng sinh hoạt.",
+        "reversed": "Mệt mỏi vì bận rộn."
+      },
+      "advice": "Linh hoạt là chìa khóa để giữ thăng bằng.",
+      "imagery": "Chàng trai vừa nhảy vừa tung hứng hai đồng tiền nối bằng dải vô cực, phía sau là sóng lớn."
+    }
   },
   {
     "slug": "three-of-pentacles",
@@ -734,7 +3176,44 @@
     "number": 3,
     "upright_meaning": "Làm việc nhóm, tay nghề được ghi nhận và hợp tác hiệu quả.",
     "reversed_meaning": "Thiếu phối hợp, chất lượng kém hoặc bất đồng trong nhóm.",
-    "image_url": "/cards/three-of-pentacles.webp"
+    "image_url": "/cards/three-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Hợp tác",
+        "Kỹ năng",
+        "Làm việc nhóm",
+        "Học hỏi"
+      ],
+      "keywords_reversed": [
+        "Thiếu phối hợp",
+        "Làm ẩu",
+        "Bất đồng"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Cùng nhau xây dựng mối quan hệ.",
+        "reversed": "Thiếu nỗ lực chung."
+      },
+      "career": {
+        "upright": "Làm việc nhóm hiệu quả, được ghi nhận tay nghề.",
+        "reversed": "Phối hợp kém."
+      },
+      "finance": {
+        "upright": "Thu nhập từ kỹ năng.",
+        "reversed": "Đầu tư thiếu kế hoạch."
+      },
+      "health": {
+        "upright": "Nghe lời khuyên chuyên gia.",
+        "reversed": "Bỏ qua lời khuyên."
+      },
+      "advice": "Thành quả lớn đến từ nhiều bàn tay.",
+      "imagery": "Người thợ đá làm việc trong nhà thờ, hai người cầm bản vẽ đứng bàn bạc."
+    }
   },
   {
     "slug": "four-of-pentacles",
@@ -745,7 +3224,44 @@
     "number": 4,
     "upright_meaning": "Giữ chặt tài sản, ưu tiên an toàn và kiểm soát.",
     "reversed_meaning": "Keo kiệt, sợ mất mát, hoặc bắt đầu buông lỏng sự kiểm soát.",
-    "image_url": "/cards/four-of-pentacles.webp"
+    "image_url": "/cards/four-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Giữ chặt",
+        "Tiết kiệm",
+        "Kiểm soát",
+        "An toàn"
+      ],
+      "keywords_reversed": [
+        "Keo kiệt",
+        "Buông bỏ",
+        "Mất kiểm soát"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Sở hữu, kiểm soát trong tình cảm.",
+        "reversed": "Học cách buông lỏng."
+      },
+      "career": {
+        "upright": "Giữ vị trí an toàn.",
+        "reversed": "Sợ thay đổi."
+      },
+      "finance": {
+        "upright": "Tiết kiệm, giữ tiền chặt.",
+        "reversed": "Keo kiệt hoặc chi bừa."
+      },
+      "health": {
+        "upright": "Căng cứng cơ thể.",
+        "reversed": "Buông bỏ căng thẳng."
+      },
+      "advice": "An toàn tốt, nhưng đừng ôm chặt đến nghẹt thở.",
+      "imagery": "Người đàn ông ôm chặt đồng tiền, một đồng trên đầu, hai đồng dưới chân."
+    }
   },
   {
     "slug": "five-of-pentacles",
@@ -756,7 +3272,44 @@
     "number": 5,
     "upright_meaning": "Khó khăn vật chất, cảm giác bị bỏ rơi và cần tìm sự giúp đỡ.",
     "reversed_meaning": "Cải thiện dần, nhận được hỗ trợ hoặc thoát khỏi thiếu thốn.",
-    "image_url": "/cards/five-of-pentacles.webp"
+    "image_url": "/cards/five-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Khó khăn",
+        "Thiếu thốn",
+        "Cô lập",
+        "Lo âu"
+      ],
+      "keywords_reversed": [
+        "Hồi phục",
+        "Tìm trợ giúp",
+        "Vượt khó"
+      ],
+      "yes_no": {
+        "upright": "no",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Cảm thấy bị bỏ rơi.",
+        "reversed": "Tìm được sự hỗ trợ."
+      },
+      "career": {
+        "upright": "Mất việc, khó khăn.",
+        "reversed": "Dần ổn định."
+      },
+      "finance": {
+        "upright": "Túng thiếu.",
+        "reversed": "Hồi phục tài chính."
+      },
+      "health": {
+        "upright": "Sức khỏe yếu.",
+        "reversed": "Đang hồi phục."
+      },
+      "advice": "Sự giúp đỡ ở gần hơn bạn nghĩ; hãy ngước lên.",
+      "imagery": "Hai người rách rưới lê bước trong tuyết ngang qua ô cửa kính nhà thờ sáng đèn."
+    }
   },
   {
     "slug": "six-of-pentacles",
@@ -767,7 +3320,44 @@
     "number": 6,
     "upright_meaning": "Cho và nhận cân bằng; sự rộng lượng và hỗ trợ lẫn nhau.",
     "reversed_meaning": "Cho đi kèm điều kiện, nợ nần hoặc mất cân bằng trong trao đổi.",
-    "image_url": "/cards/six-of-pentacles.webp"
+    "image_url": "/cards/six-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Cho đi",
+        "Hào phóng",
+        "Chia sẻ",
+        "Công bằng"
+      ],
+      "keywords_reversed": [
+        "Nợ nần",
+        "Cho có điều kiện",
+        "Mất cân bằng"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Cho và nhận cân bằng.",
+        "reversed": "Một bên cho quá nhiều."
+      },
+      "career": {
+        "upright": "Được hỗ trợ, thăng tiến.",
+        "reversed": "Bị lợi dụng."
+      },
+      "finance": {
+        "upright": "Nhận hoặc cho tiền giúp đỡ.",
+        "reversed": "Nợ nần, vay mượn."
+      },
+      "health": {
+        "upright": "Chia sẻ nguồn lực.",
+        "reversed": "Kiệt sức vì giúp người."
+      },
+      "advice": "Cho đi trong khả năng và với lòng chân thành.",
+      "imagery": "Thương nhân cầm cân, phát tiền cho hai người ăn xin quỳ dưới chân."
+    }
   },
   {
     "slug": "seven-of-pentacles",
@@ -778,7 +3368,44 @@
     "number": 7,
     "upright_meaning": "Kiên nhẫn chờ thành quả và đánh giá lại công sức đã bỏ ra.",
     "reversed_meaning": "Nóng lòng, đầu tư không hiệu quả hoặc nỗ lực chưa có kết quả.",
-    "image_url": "/cards/seven-of-pentacles.webp"
+    "image_url": "/cards/seven-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Kiên nhẫn",
+        "Đầu tư dài hạn",
+        "Đánh giá",
+        "Chờ đợi"
+      ],
+      "keywords_reversed": [
+        "Nóng vội",
+        "Lãng phí",
+        "Thiếu kết quả"
+      ],
+      "yes_no": {
+        "upright": "maybe",
+        "reversed": "no"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Kiên nhẫn chờ mối quan hệ phát triển.",
+        "reversed": "Đầu tư cảm xúc không đáp lại."
+      },
+      "career": {
+        "upright": "Đánh giá tiến độ, chờ kết quả.",
+        "reversed": "Nóng vội, bỏ cuộc."
+      },
+      "finance": {
+        "upright": "Đầu tư dài hạn.",
+        "reversed": "Lợi nhuận kém."
+      },
+      "health": {
+        "upright": "Kiên trì luyện tập.",
+        "reversed": "Thiếu kiên trì."
+      },
+      "advice": "Cây cần thời gian để ra quả.",
+      "imagery": "Người nông dân tựa cuốc nhìn bụi cây treo bảy đồng tiền."
+    }
   },
   {
     "slug": "eight-of-pentacles",
@@ -789,7 +3416,44 @@
     "number": 8,
     "upright_meaning": "Chăm chỉ rèn luyện, tập trung vào tay nghề và chất lượng.",
     "reversed_meaning": "Cầu toàn quá mức, chán công việc lặp lại hoặc làm cho có.",
-    "image_url": "/cards/eight-of-pentacles.webp"
+    "image_url": "/cards/eight-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Chăm chỉ",
+        "Tỉ mỉ",
+        "Rèn luyện",
+        "Tay nghề"
+      ],
+      "keywords_reversed": [
+        "Cầu toàn",
+        "Làm ẩu",
+        "Thiếu động lực"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Nỗ lực vun đắp.",
+        "reversed": "Ưu tiên công việc hơn tình cảm."
+      },
+      "career": {
+        "upright": "Chăm chỉ, nâng cao tay nghề.",
+        "reversed": "Làm qua loa."
+      },
+      "finance": {
+        "upright": "Thu nhập đều nhờ chăm chỉ.",
+        "reversed": "Tiêu tốn cho việc không hiệu quả."
+      },
+      "health": {
+        "upright": "Thói quen lành mạnh đều đặn.",
+        "reversed": "Làm việc quá sức."
+      },
+      "advice": "Từng nhát đục nhỏ làm nên kiệt tác.",
+      "imagery": "Người thợ ngồi chăm chú khắc đồng tiền, các đồng tiền hoàn thành treo trên cột."
+    }
   },
   {
     "slug": "nine-of-pentacles",
@@ -800,7 +3464,44 @@
     "number": 9,
     "upright_meaning": "Độc lập tài chính, thành quả của nỗ lực và sự thoải mái.",
     "reversed_meaning": "Phụ thuộc người khác, tiêu xài quá tay hoặc khoe khoang.",
-    "image_url": "/cards/nine-of-pentacles.webp"
+    "image_url": "/cards/nine-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Độc lập",
+        "Sung túc",
+        "Tự chủ",
+        "Tận hưởng"
+      ],
+      "keywords_reversed": [
+        "Phụ thuộc",
+        "Phô trương",
+        "Chi tiêu quá"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Độc lập, tự tin trong tình yêu.",
+        "reversed": "Phụ thuộc người khác."
+      },
+      "career": {
+        "upright": "Thành quả từ nỗ lực.",
+        "reversed": "Thiếu tự chủ."
+      },
+      "finance": {
+        "upright": "Tài chính độc lập, dư dả.",
+        "reversed": "Chi tiêu phô trương."
+      },
+      "health": {
+        "upright": "Sức khỏe tốt, thư thái.",
+        "reversed": "Lơ là chăm sóc."
+      },
+      "advice": "Tận hưởng thành quả bạn tự xây dựng.",
+      "imagery": "Người phụ nữ sang trọng đứng giữa vườn nho, chim ưng đậu trên tay."
+    }
   },
   {
     "slug": "ten-of-pentacles",
@@ -811,7 +3512,44 @@
     "number": 10,
     "upright_meaning": "Thịnh vượng lâu dài, gia đình và di sản vững chắc.",
     "reversed_meaning": "Rắc rối tài chính trong gia đình, thiếu ổn định hoặc mâu thuẫn về tài sản.",
-    "image_url": "/cards/ten-of-pentacles.webp"
+    "image_url": "/cards/ten-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Gia sản",
+        "Bền vững",
+        "Gia đình",
+        "Di sản"
+      ],
+      "keywords_reversed": [
+        "Tranh chấp tài sản",
+        "Bất ổn",
+        "Mất mát"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Mối quan hệ bền vững, hướng tới gia đình.",
+        "reversed": "Bất đồng gia đình."
+      },
+      "career": {
+        "upright": "Sự nghiệp ổn định lâu dài.",
+        "reversed": "Bất ổn công việc."
+      },
+      "finance": {
+        "upright": "Tài sản, thừa kế.",
+        "reversed": "Tranh chấp tài sản."
+      },
+      "health": {
+        "upright": "Khỏe mạnh, ổn định.",
+        "reversed": "Lo âu gia đình."
+      },
+      "advice": "Xây thứ gì đó bền vững cho những người sau.",
+      "imagery": "Gia đình ba thế hệ dưới cổng vòm, ông lão vuốt ve hai chú chó, mười đồng tiền xếp hình cây sự sống."
+    }
   },
   {
     "slug": "page-of-pentacles",
@@ -822,7 +3560,44 @@
     "number": 11,
     "upright_meaning": "Cơ hội học hỏi, kế hoạch mới thiết thực và tinh thần cầu tiến.",
     "reversed_meaning": "Thiếu thực tế, trì hoãn hoặc lười biếng.",
-    "image_url": "/cards/page-of-pentacles.webp"
+    "image_url": "/cards/page-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Học hỏi",
+        "Chăm chỉ",
+        "Cơ hội mới",
+        "Thực tế"
+      ],
+      "keywords_reversed": [
+        "Lười biếng",
+        "Trì hoãn",
+        "Thiếu tập trung"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Tình cảm chân thành, chậm mà chắc.",
+        "reversed": "Thiếu nghiêm túc."
+      },
+      "career": {
+        "upright": "Học kỹ năng mới, cơ hội thực tập.",
+        "reversed": "Trì hoãn học hỏi."
+      },
+      "finance": {
+        "upright": "Bắt đầu tiết kiệm.",
+        "reversed": "Chi tiêu thiếu kế hoạch."
+      },
+      "health": {
+        "upright": "Bắt đầu thói quen tốt.",
+        "reversed": "Lười vận động."
+      },
+      "advice": "Bắt đầu từ những bước nhỏ và thực tế.",
+      "imagery": "Chàng trai đứng giữa cánh đồng xanh, chăm chú ngắm đồng tiền nâng trên tay."
+    }
   },
   {
     "slug": "knight-of-pentacles",
@@ -833,7 +3608,44 @@
     "number": 12,
     "upright_meaning": "Kiên trì, đáng tin cậy và làm việc có phương pháp.",
     "reversed_meaning": "Quá chậm, bảo thủ hoặc trì trệ.",
-    "image_url": "/cards/knight-of-pentacles.webp"
+    "image_url": "/cards/knight-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Kiên định",
+        "Đáng tin",
+        "Chăm chỉ",
+        "Thận trọng"
+      ],
+      "keywords_reversed": [
+        "Trì trệ",
+        "Nhàm chán",
+        "Cứng nhắc"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Người đáng tin, tình cảm bền.",
+        "reversed": "Nhàm chán, thiếu lãng mạn."
+      },
+      "career": {
+        "upright": "Làm việc chăm chỉ, đều đặn.",
+        "reversed": "Trì trệ."
+      },
+      "finance": {
+        "upright": "Tích lũy đều.",
+        "reversed": "Quá thận trọng, bỏ lỡ."
+      },
+      "health": {
+        "upright": "Duy trì thói quen tốt.",
+        "reversed": "Lười vận động."
+      },
+      "advice": "Chậm mà chắc vẫn về đích.",
+      "imagery": "Hiệp sĩ ngồi trên con ngựa đen đứng yên, nâng đồng tiền, nhìn cánh đồng đã cày."
+    }
   },
   {
     "slug": "queen-of-pentacles",
@@ -844,7 +3656,44 @@
     "number": 13,
     "upright_meaning": "Thực tế, chu đáo và biết lo cả tiền bạc lẫn người thân.",
     "reversed_meaning": "Lo lắng vật chất thái quá, bỏ bê bản thân hoặc ghen tị.",
-    "image_url": "/cards/queen-of-pentacles.webp"
+    "image_url": "/cards/queen-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Chu đáo",
+        "Thực tế",
+        "Sung túc",
+        "Ấm áp"
+      ],
+      "keywords_reversed": [
+        "Bỏ bê bản thân",
+        "Quá lo",
+        "Mất cân bằng"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Chăm sóc, ấm áp, chu đáo.",
+        "reversed": "Lo cho người khác mà quên mình."
+      },
+      "career": {
+        "upright": "Cân bằng công việc và gia đình.",
+        "reversed": "Mất cân bằng."
+      },
+      "finance": {
+        "upright": "Quản lý tiền khéo léo.",
+        "reversed": "Chi tiêu vì người khác quá mức."
+      },
+      "health": {
+        "upright": "Chăm sóc thể chất tốt.",
+        "reversed": "Bỏ bê bản thân."
+      },
+      "advice": "Chăm sóc tổ ấm, và chính bạn nữa.",
+      "imagery": "Nữ hoàng ngồi giữa vườn hoa, ôm đồng tiền trong lòng, một chú thỏ ở góc."
+    }
   },
   {
     "slug": "king-of-pentacles",
@@ -855,6 +3704,43 @@
     "number": 14,
     "upright_meaning": "Giàu có nhờ nỗ lực, ổn định và đáng tin cậy.",
     "reversed_meaning": "Tham lam, cứng nhắc hoặc xem trọng vật chất quá mức.",
-    "image_url": "/cards/king-of-pentacles.webp"
+    "image_url": "/cards/king-of-pentacles.webp",
+    "details": {
+      "keywords_upright": [
+        "Thịnh vượng",
+        "Ổn định",
+        "Thành đạt",
+        "Bảo hộ"
+      ],
+      "keywords_reversed": [
+        "Tham lam",
+        "Vật chất",
+        "Cứng nhắc"
+      ],
+      "yes_no": {
+        "upright": "yes",
+        "reversed": "maybe"
+      },
+      "element": "Đất",
+      "astrology": null,
+      "love": {
+        "upright": "Người bạn đời vững vàng, chu cấp tốt.",
+        "reversed": "Đặt vật chất lên trên tình cảm."
+      },
+      "career": {
+        "upright": "Thành đạt, kinh doanh tốt.",
+        "reversed": "Tham công tiếc việc."
+      },
+      "finance": {
+        "upright": "Thịnh vượng, đầu tư khôn ngoan.",
+        "reversed": "Tham lam, rủi ro."
+      },
+      "health": {
+        "upright": "Ổn định, khỏe mạnh.",
+        "reversed": "Ăn uống quá đà."
+      },
+      "advice": "Sự giàu có thật sự là có thể chăm lo cho người khác.",
+      "imagery": "Nhà vua mặc áo choàng họa tiết nho ngồi trên ngai đầu bò, tay cầm đồng tiền và quyền trượng."
+    }
   }
 ]

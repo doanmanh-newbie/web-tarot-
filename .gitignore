@@ -24,6 +24,6 @@ dist/
 *.tsv
 *.png
 *.mp4
-
+*.jpg
 *.image frame
 *.image tarot

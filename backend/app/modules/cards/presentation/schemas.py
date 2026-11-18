@@ -15,6 +15,7 @@ class CardResponse(BaseModel):
     upright_meaning: str
     reversed_meaning: str
     image_url: str | None
+    details: dict | None = None
 
     @classmethod
     def from_entity(cls, card: Card) -> "CardResponse":

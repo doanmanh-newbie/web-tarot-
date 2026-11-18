@@ -17,6 +17,9 @@ class Card:
     upright_meaning: str
     reversed_meaning: str
     image_url: str | None = None
+    # Nội dung mở rộng (từ khóa, yes/no, nguyên tố, chiêm tinh, nghĩa theo chủ đề, lời khuyên, hình ảnh).
+    # Chỉ để hiển thị, không có luật nghiệp vụ nên giữ nguyên dạng dict từ seed.
+    details: dict | None = None
 
     def meaning(self, is_reversed: bool) -> str:
         """Ý nghĩa gốc theo chiều bài (dùng để nhét vào prompt cho AI)."""
