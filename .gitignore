@@ -25,5 +25,5 @@ dist/
 *.png
 *.mp4
 *.jpg
-*.image frame
-*.image tarot
+image frame/
+image tarot/
