@@ -12,7 +12,7 @@ export default function TarotCard({ card, reversed = false }) {
           <span className="small">{card.name}</span>
         </div>
       ) : (
-        <img src={card.image_url} alt={`${card.name_vi} (${card.name})`} onError={() => setBroken(true)} />
+        <img draggable={false} src={card.image_url} alt={`${card.name_vi} (${card.name})`} onError={() => setBroken(true)} />
       )}
     </div>
   );

@@ -14,6 +14,7 @@ Swagger tự sinh tại `/docs` khi chạy backend.
 | GET | /readings/{id} | Chi tiết một lần bốc | user (chủ sở hữu) |
 | DELETE | /readings/{id} | Xóa | user (chủ sở hữu) |
 | GET | /me/quota | Số lượt còn lại hôm nay | user |
+| GET | /cards?limit=12&offset=0 | Danh mục bài theo trang (lướt bài) | user |
 | GET | /admin/cards | Xem bộ bài | admin |
 | PUT | /admin/cards/{id} | Sửa ý nghĩa lá bài | admin |
 

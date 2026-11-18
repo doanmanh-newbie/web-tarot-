@@ -20,3 +20,10 @@ dist/
 .vscode/
 .idea/
 .DS_Store
+
+*.tsv
+*.png
+*.mp4
+
+*.image frame
+*.image tarot

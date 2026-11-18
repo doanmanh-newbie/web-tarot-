@@ -1,6 +1,6 @@
 # Ảnh lá bài
 
-Backend trả `image_url` dạng `/cards/<slug>.jpg`, ví dụ `/cards/the-fool.jpg`, `/cards/ace-of-wands.jpg`.
+Backend trả `image_url` dạng `/cards/<slug>.webp`, ví dụ `/cards/the-fool.webp`, `/cards/ace-of-wands.webp`.
 Đặt đủ 78 file với đúng tên slug trong thư mục này (danh sách slug nằm trong `backend/scripts/data/cards.json`).
 
 ## Bản quyền (quan trọng)

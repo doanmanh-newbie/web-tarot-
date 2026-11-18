@@ -18,7 +18,7 @@ Module `readings` dùng `CardRepository.get_by_ids()` để lấy ý nghĩa gố
 - Nguồn: `scripts/data/cards.json` (nội dung ý nghĩa viết lại bằng lời của nhóm, không chép từ sách/website).
 - `slug` là khóa tự nhiên (`the-fool`, `ace-of-wands`), dùng để seed upsert.
 - `number`: Major 0-21; Minor 1-14 (Ace=1, Page=11, Knight=12, Queen=13, King=14).
-- `image_url` có dạng `/cards/<slug>.jpg`. File ảnh do frontend đặt ở `frontend/public/cards/`
+- `image_url` có dạng `/cards/<slug>.webp`. File ảnh do frontend đặt ở `frontend/public/cards/`
   (xem `frontend/public/cards/README.md` về nguồn ảnh và bản quyền).
 
 ## Quyết định thiết kế

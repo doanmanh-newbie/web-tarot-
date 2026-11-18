@@ -1,6 +1,6 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Query
 
-from app.modules.auth.presentation.dependencies import require_admin
+from app.modules.auth.presentation.dependencies import get_current_user, require_admin
 from app.modules.cards.application.use_cases.get_card import GetCard
 from app.modules.cards.application.use_cases.list_cards import ListCards
 from app.modules.cards.application.use_cases.update_card_meaning import UpdateCardMeaning
@@ -33,3 +33,17 @@ def update_card(
 ) -> CardResponse:
     card = use_case.execute(card_id, body.upright_meaning, body.reversed_meaning)
     return CardResponse.from_entity(card)
+
+
+# Danh mục bài cho người dùng thường (lướt bài ở frontend), tải theo trang
+catalog_router = APIRouter(dependencies=[Depends(get_current_user)])
+
+
+@catalog_router.get("", response_model=list[CardResponse])
+def list_catalog(
+    limit: int = Query(12, ge=1, le=78),
+    offset: int = Query(0, ge=0),
+    use_case: ListCards = Depends(get_list_cards),
+) -> list[CardResponse]:
+    # shortcut: cắt trang trong Python vì cả bộ chỉ 78 lá; bảng lớn hơn thì chuyển LIMIT/OFFSET xuống repository
+    return [CardResponse.from_entity(c) for c in use_case.execute()[offset : offset + limit]]

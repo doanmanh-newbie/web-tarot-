@@ -26,7 +26,7 @@ def test_every_card_has_both_meanings_and_image_path():
     cards, _ = load_data()
     for c in cards:
         assert len(c["upright_meaning"]) >= 20 and len(c["reversed_meaning"]) >= 20, c["slug"]
-        assert c["image_url"] == f"/cards/{c['slug']}.jpg"
+        assert c["image_url"] == f"/cards/{c['slug']}.webp"
 
 
 def test_upright_and_reversed_differ():

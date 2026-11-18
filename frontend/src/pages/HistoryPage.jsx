@@ -39,7 +39,7 @@ export default function HistoryPage() {
       <h1>Lịch sử bốc bài</h1>
       <ErrorMessage message={error} />
       {items.length === 0 ? (
-        <p className="muted">Chưa có lần bốc nào. <Link to="/">Bốc bài ngay</Link></p>
+        <p className="muted">Chưa có lần bốc nào. <Link to="/#boc-bai">Bốc bài ngay</Link></p>
       ) : (
         <ul className="history">
           {items.map((r) => (

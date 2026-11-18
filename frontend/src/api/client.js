@@ -1,4 +1,8 @@
+import { mockRequest } from "../mock/mockServer.js";
+
 const BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+// Mặc định dùng dữ liệu giả; đặt VITE_USE_MOCK=false trong .env để gọi backend thật
+const USE_MOCK = import.meta.env.VITE_USE_MOCK !== "false";
 
 let authToken = null;
 let onUnauthorized = null;
@@ -10,6 +14,7 @@ export const setUnauthorizedHandler = (fn) => {
 };
 
 export async function request(path, { method = "GET", body } = {}) {
+  if (USE_MOCK) return mockRequest(path, { method, body });
   let res;
   try {
     res = await fetch(`${BASE_URL}${path}`, {

@@ -15,10 +15,10 @@ export default function ProtectedRoute({ adminOnly = false }) {
   if (adminOnly && user.role !== "admin") return <Navigate to="/" replace />;
   return (
     <>
-      <NavBar />
       <main className="container">
         <Outlet />
       </main>
+      <NavBar />
     </>
   );
 }

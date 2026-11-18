@@ -64,3 +64,17 @@ def test_update_unknown_card_is_404(ctx):
     body = {"upright_meaning": "a", "reversed_meaning": "b"}
     res = ctx.client.put("/admin/cards/999", json=body, headers=ctx.auth_header(Role.ADMIN))
     assert res.status_code == 404
+
+
+def test_catalog_requires_login(ctx):
+    assert ctx.client.get("/cards").status_code == 401
+
+
+def test_normal_user_pages_through_catalog(ctx):
+    ctx.seed()
+    headers = ctx.auth_header(Role.USER)
+    first = ctx.client.get("/cards?limit=12&offset=0", headers=headers).json()
+    last = ctx.client.get("/cards?limit=12&offset=72", headers=headers).json()
+    assert len(first) == 12 and first[0]["slug"] == "the-fool"
+    assert len(last) == 6
+    assert ctx.client.get("/cards?limit=0", headers=headers).status_code == 422
