@@ -5,7 +5,7 @@ import { login as apiLogin, register } from "../api/auth.js";
 const AuthContext = createContext(null);
 
 // Không có màn đăng nhập: frontend tự đăng nhập bằng tài khoản demo cấu hình trong .env
-const DEMO_EMAIL = import.meta.env.VITE_DEMO_EMAIL ?? "demo@tarot.local";
+const DEMO_EMAIL = import.meta.env.VITE_DEMO_EMAIL ?? "demo@tarotweb.app";
 const DEMO_PASSWORD = import.meta.env.VITE_DEMO_PASSWORD ?? "demo-tarot-2026";
 
 async function demoLogin() {

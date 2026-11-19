@@ -26,3 +26,5 @@ class Reading:
     ai_interpretation: str | None = None
     ai_status: AIStatus = AIStatus.PENDING
     created_at: datetime | None = None
+    prompt_version: str | None = None  # phiên bản prompt sinh ra lời giải; None = trước khi có cột này
+    accuracy: int | None = None  # người dùng tự chấm lời giải đúng bao nhiêu % (0-100); None = chưa chấm

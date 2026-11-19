@@ -16,6 +16,7 @@ from app.modules.quota.domain.exceptions import DailyQuotaExceeded
 from app.modules.readings.domain.exceptions import (
     DeckNotReady,
     InterpretationFailed,
+    InvalidAccuracy,
     InvalidQuestion,
     ReadingNotFound,
 )
@@ -30,6 +31,7 @@ _ERROR_MAP: dict[type[DomainError], tuple[int, str]] = {
     EmailAlreadyUsed: (409, "Email này đã được đăng ký"),
     WeakPassword: (422, "Mật khẩu không đạt yêu cầu"),
     InvalidQuestion: (422, "Câu hỏi không hợp lệ"),
+    InvalidAccuracy: (422, "Đánh giá không hợp lệ"),
     ReadingNotFound: (404, "Không tìm thấy lần xem bài này"),
     CardNotFound: (404, "Không tìm thấy lá bài"),
     InvalidCardMeaning: (422, "Ý nghĩa lá bài không hợp lệ"),
@@ -53,7 +55,9 @@ def register_error_handlers(app: FastAPI) -> None:
         status, default_message = _lookup(exc)
         # Chỉ lỗi có thông báo thân thiện mới được hiện nguyên văn; còn lại dùng thông báo mặc định
         # (vd EmailAlreadyUsed mang theo email, không nên trả ra).
-        own_message_errors = (WeakPassword, InvalidToken, NotAuthorized, InvalidCardMeaning, InvalidQuestion)
+        own_message_errors = (
+            WeakPassword, InvalidToken, NotAuthorized, InvalidCardMeaning, InvalidQuestion, InvalidAccuracy
+        )
         shows_own_message = isinstance(exc, own_message_errors)
         message = str(exc) if shows_own_message and str(exc) else default_message
         headers = {"WWW-Authenticate": "Bearer"} if status == 401 else None

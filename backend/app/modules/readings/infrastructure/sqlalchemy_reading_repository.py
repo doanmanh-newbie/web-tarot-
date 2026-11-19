@@ -4,6 +4,7 @@ from sqlalchemy import func, select, text
 from sqlalchemy.orm import Session, selectinload
 
 from app.modules.quota.application.ports.reading_counter import ReadingCounter
+from app.modules.readings.domain.accuracy_stats import RatingRow
 from app.modules.readings.domain.exceptions import ReadingNotFound
 from app.modules.readings.domain.reading import AIStatus, DrawnCard, Reading
 from app.modules.readings.domain.reading_repository import ReadingRepository
@@ -30,6 +31,8 @@ def _to_entity(m: ReadingModel) -> Reading:
         ai_interpretation=m.ai_interpretation,
         ai_status=AIStatus(m.ai_status),
         created_at=_utc(m.created_at),
+        accuracy=m.accuracy,
+        prompt_version=m.prompt_version,
     )
 
 
@@ -105,12 +108,31 @@ class SqlAlchemyReadingRepository(ReadingRepository, ReadingCounter):
         )
         return [_to_entity(m) for m in self._session.scalars(stmt).all()]
 
-    def update_interpretation(self, reading_id: int, text: str | None, status: AIStatus) -> Reading:
+    def update_interpretation(
+        self, reading_id: int, text: str | None, status: AIStatus, prompt_version: str | None = None
+    ) -> Reading:
         model = self._session.get(ReadingModel, reading_id)
         if model is None:
             raise ReadingNotFound(str(reading_id))
         model.ai_interpretation = text
         model.ai_status = status.value
+        model.prompt_version = prompt_version
+        self._session.commit()
+        return _to_entity(model)
+
+    def list_interpreted(self) -> list[RatingRow]:
+        # Chỉ lấy 5 cột cần thiết, không nạp lá bài.
+        # shortcut: nạp hết vào bộ nhớ rồi gom ở Python; khi tới hàng trăm nghìn lượt thì chuyển sang GROUP BY trong SQL
+        cols = (ReadingModel.spread_id, ReadingModel.question, ReadingModel.accuracy, ReadingModel.created_at,
+                ReadingModel.prompt_version)
+        stmt = select(*cols).where(ReadingModel.deleted_at.is_(None), ReadingModel.ai_status == AIStatus.DONE.value)
+        return [RatingRow(s, q, a, _utc(c), v) for s, q, a, c, v in self._session.execute(stmt)]
+
+    def update_accuracy(self, reading_id: int, accuracy: int) -> Reading:
+        model = self._session.get(ReadingModel, reading_id)
+        if model is None:
+            raise ReadingNotFound(str(reading_id))
+        model.accuracy = accuracy
         self._session.commit()
         return _to_entity(model)
 

@@ -10,7 +10,7 @@ def test_user_lists_spreads_with_ordered_positions(ctx):
     res = ctx.client.get("/spreads", headers=ctx.auth_header(Role.USER))
     assert res.status_code == 200
     spreads = res.json()
-    assert [s["card_count"] for s in spreads] == [1, 3, 5]
+    assert [s["card_count"] for s in spreads] == [1, 3, 5, 3, 5]
     three = spreads[1]
     assert three["name"].startswith("Quá khứ")
     assert [p["label"] for p in three["positions"]] == ["Quá khứ", "Hiện tại", "Tương lai"]

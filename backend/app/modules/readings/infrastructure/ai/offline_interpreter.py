@@ -5,6 +5,8 @@ class OfflineInterpreter(AIInterpreter):
     """Diễn giải mẫu ghép từ ý nghĩa gốc, không gọi mạng. Dùng khi AI_PROVIDER=offline:
     dev frontend khi chưa có API key, chạy demo khi mất mạng, hoặc test không tốn quota Gemini."""
 
+    version = "offline"
+
     def interpret(self, question: str, spread_name: str, cards: list[CardForPrompt]) -> str:
         parts = [f"(Bản diễn giải mẫu, không dùng AI) Với câu hỏi của bạn, kiểu trải bài \"{spread_name}\" cho thấy:"]
         for card in cards:

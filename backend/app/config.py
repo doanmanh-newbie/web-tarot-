@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     gemini_api_key: str = ""
     ai_provider: str = "gemini"  # "gemini" | "offline" (diễn giải mẫu, không gọi mạng)
     gemini_model: str = "gemini-3.8-flash"
+    gemini_fallback_models: str = "gemini-3.1-flash-lite,gemini-3.5-flash-lite"  # thử lần lượt khi model chính quá tải
     gemini_max_output_tokens: int = 2048
     gemini_timeout_seconds: int = 20
     daily_reading_limit: int = 3

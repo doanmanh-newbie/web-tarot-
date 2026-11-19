@@ -15,6 +15,8 @@ from app.modules.readings.application.use_cases.draw_reading import DrawReading
 from app.modules.readings.application.use_cases.get_reading import GetReading
 from app.modules.readings.application.use_cases.interpret_reading import InterpretReading
 from app.modules.readings.application.use_cases.list_readings import ListReadings
+from app.modules.readings.application.use_cases.rate_reading import RateReading
+from app.modules.readings.domain.accuracy_stats import RatingRow
 from app.modules.readings.domain.exceptions import InterpretationFailed
 from app.modules.readings.domain.reading import AIStatus, Reading
 from app.modules.readings.domain.reading_repository import ReadingRepository
@@ -79,8 +81,21 @@ class FakeReadingRepository(ReadingRepository, ReadingCounter):
         mine.sort(key=lambda r: (r.created_at, r.id), reverse=True)
         return mine[offset : offset + limit]
 
-    def update_interpretation(self, reading_id, text, status):
-        self.rows[reading_id] = replace(self.rows[reading_id], ai_interpretation=text, ai_status=status)
+    def update_interpretation(self, reading_id, text, status, prompt_version=None):
+        self.rows[reading_id] = replace(
+            self.rows[reading_id], ai_interpretation=text, ai_status=status, prompt_version=prompt_version
+        )
+        return self.rows[reading_id]
+
+    def list_interpreted(self):
+        return [
+            RatingRow(r.spread_id, r.question, r.accuracy, r.created_at, r.prompt_version)
+            for r in self.rows.values()
+            if r.id not in self.deleted and r.ai_status is AIStatus.DONE
+        ]
+
+    def update_accuracy(self, reading_id, accuracy):
+        self.rows[reading_id] = replace(self.rows[reading_id], accuracy=accuracy)
         return self.rows[reading_id]
 
     def delete(self, reading_id):
@@ -109,4 +124,5 @@ def make_env(limit=3, ai_fails=False, now=None, deck_size=78, labels=("Qu√° kh·ª
         list=ListReadings(readings, builder),
         get=GetReading(readings, builder),
         delete=DeleteReading(readings),
+        rate=RateReading(readings, builder),
     )

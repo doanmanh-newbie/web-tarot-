@@ -55,5 +55,51 @@
         "description": "Hướng phát triển có thể xảy ra nếu làm theo lời khuyên."
       }
     ]
+  },
+  {
+    "slug": "three-card-free",
+    "name": "Ba lá tự do",
+    "description": "Ba lá cùng trả lời câu hỏi của bạn, không gò vào khung quá khứ - hiện tại - tương lai.",
+    "positions": [
+      {
+        "label": "Lá thứ nhất",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      },
+      {
+        "label": "Lá thứ hai",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      },
+      {
+        "label": "Lá thứ ba",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      }
+    ]
+  },
+  {
+    "slug": "five-card-free",
+    "name": "Năm lá tự do",
+    "description": "Năm lá cùng soi nhiều khía cạnh của câu hỏi, đọc như một câu chuyện liền mạch.",
+    "positions": [
+      {
+        "label": "Lá thứ nhất",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      },
+      {
+        "label": "Lá thứ hai",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      },
+      {
+        "label": "Lá thứ ba",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      },
+      {
+        "label": "Lá thứ tư",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      },
+      {
+        "label": "Lá thứ năm",
+        "description": "Đọc cùng các lá khác để trả lời câu hỏi, không gán vị trí cố định."
+      }
+    ]
   }
 ]

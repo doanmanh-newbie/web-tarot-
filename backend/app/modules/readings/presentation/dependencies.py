@@ -15,9 +15,11 @@ from app.modules.readings.application.ports.random_source import RandomSource
 from app.modules.readings.application.reading_details import ReadingDetailsBuilder
 from app.modules.readings.application.use_cases.delete_reading import DeleteReading
 from app.modules.readings.application.use_cases.draw_reading import DrawReading
+from app.modules.readings.application.use_cases.get_accuracy_stats import GetAccuracyStats
 from app.modules.readings.application.use_cases.get_reading import GetReading
 from app.modules.readings.application.use_cases.interpret_reading import InterpretReading
 from app.modules.readings.application.use_cases.list_readings import ListReadings
+from app.modules.readings.application.use_cases.rate_reading import RateReading
 from app.modules.readings.domain.reading_repository import ReadingRepository
 from app.modules.readings.infrastructure.ai.gemini_interpreter import GeminiInterpreter, UnconfiguredInterpreter
 from app.modules.readings.infrastructure.ai.offline_interpreter import OfflineInterpreter
@@ -45,6 +47,7 @@ def get_ai_interpreter() -> AIInterpreter:
         settings.gemini_model,
         settings.gemini_timeout_seconds,
         settings.gemini_max_output_tokens,
+        tuple(m.strip() for m in settings.gemini_fallback_models.split(",")),
     )
 
 
@@ -102,6 +105,21 @@ def get_get_reading(
     builder: ReadingDetailsBuilder = Depends(get_details_builder),
 ) -> GetReading:
     return GetReading(readings, builder)
+
+
+def get_rate_reading(
+    readings: ReadingRepository = Depends(get_reading_repository),
+    builder: ReadingDetailsBuilder = Depends(get_details_builder),
+) -> RateReading:
+    return RateReading(readings, builder)
+
+
+def get_accuracy_stats(
+    readings: ReadingRepository = Depends(get_reading_repository),
+    spreads: SpreadRepository = Depends(get_spread_repository),
+    clock: Clock = Depends(get_clock),
+) -> GetAccuracyStats:
+    return GetAccuracyStats(readings, spreads, clock, get_settings().app_timezone)
 
 
 def get_delete_reading(readings: ReadingRepository = Depends(get_reading_repository)) -> DeleteReading:

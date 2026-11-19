@@ -95,9 +95,20 @@ Card object:
 {
   "id": 1, "slug": "the-fool", "name": "The Fool", "name_vi": "Chàng Khờ",
   "arcana": "major", "suit": null, "number": 0,
-  "upright_meaning": "...", "reversed_meaning": "...", "image_url": "/cards/the-fool.jpg"
+  "upright_meaning": "...", "reversed_meaning": "...", "image_url": "/cards/the-fool.webp",
+  "details": {
+    "keywords_upright": ["Khởi đầu", "..."], "keywords_reversed": ["..."],
+    "yes_no": { "upright": "yes", "reversed": "no" },      // yes | no | maybe
+    "element": "Khí", "astrology": "Thiên Vương Tinh",      // astrology: null với Ẩn Phụ
+    "love":    { "upright": "...", "reversed": "..." },
+    "career":  { "upright": "...", "reversed": "..." },
+    "finance": { "upright": "...", "reversed": "..." },
+    "health":  { "upright": "...", "reversed": "..." },
+    "advice": "...", "imagery": "..."
+  }
 }
 ```
+`details` chỉ đọc (admin không sửa qua `PUT`), có thể `null` nếu DB chưa chạy seed sau migration 0005.
 - `GET /admin/cards` trả mảng 78 card (sắp theo id). `GET /admin/cards/{id}` trả một card, `404` nếu không có.
 - `PUT /admin/cards/{id}` body `{ "upright_meaning": "...", "reversed_meaning": "..." }`. Không nhận field nào khác (`422`).
   Nội dung rỗng hoặc quá 1000 ký tự: `422`. User thường gọi: `403`.
@@ -135,6 +146,9 @@ Card object:
 ### POST /readings
 Request: `{ "spread_id": 2, "question": "Công việc sắp tới thế nào?" }`
 Không nhận field nào khác. Server tự bốc bài.
+Query tùy chọn `?interpret=false`: chỉ bốc + lưu + tính lượt rồi trả lá ngay (`ai_status: "pending"`), chưa gọi AI.
+Frontend dùng cách này để lật lá cho người dùng xem trước, rồi mới gọi `POST /readings/{id}/interpret` lấy lời giải.
+Mặc định (`true`) giữ hành vi cũ: bốc và giải trong cùng một request.
 
 | Mã | Khi nào |
 |---|---|
@@ -149,6 +163,11 @@ Gọi có thể mất tới ~20 giây (chờ AI): hiển thị trạng thái đa
 ### POST /readings/{id}/interpret
 Không body. Dùng khi `ai_status != "done"`. Không bốc lại bài, không tốn lượt. Trả `200` + reading
 (có thể vẫn `"failed"` nếu AI tiếp tục lỗi). Reading đã `"done"` thì trả luôn kết quả cũ.
+
+### PUT /readings/{id}/rating
+Request: `{ "accuracy": 70 }` (số nguyên 0-100: người dùng thấy lời giải đúng bao nhiêu %). Chấm lại thì ghi đè.
+`200` + reading (có trường `accuracy`). `404` nếu không phải reading của mình, `422` nếu ngoài 0-100
+hoặc reading chưa có lời giải (`ai_status != "done"`). Mọi reading trả về đều có `accuracy` (`null` = chưa chấm).
 
 ### GET /readings?limit=20&offset=0
 Mảng reading của chính mình, mới nhất trước (`limit` 1..100). Không gồm reading đã xóa.

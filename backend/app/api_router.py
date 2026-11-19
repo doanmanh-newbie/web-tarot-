@@ -6,6 +6,7 @@ from app.modules.cards.presentation.router import catalog_router
 from app.modules.cards.presentation.router import router as cards_router
 from app.modules.readings.presentation.router import me_router as me_router
 from app.modules.readings.presentation.router import router as readings_router
+from app.modules.readings.presentation.router import stats_router
 from app.modules.spreads.presentation.router import router as spreads_router
 
 api_router = APIRouter()
@@ -15,3 +16,4 @@ api_router.include_router(readings_router, prefix="/readings", tags=["readings"]
 api_router.include_router(me_router, prefix="/me", tags=["quota"])  # GET /me/quota (use case của module quota)
 api_router.include_router(cards_router, prefix="/admin/cards", tags=["admin"])
 api_router.include_router(catalog_router, prefix="/cards", tags=["cards"])
+api_router.include_router(stats_router, prefix="/admin/stats", tags=["admin"])

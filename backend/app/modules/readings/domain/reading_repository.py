@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from datetime import datetime
 
+from app.modules.readings.domain.accuracy_stats import RatingRow
 from app.modules.readings.domain.reading import AIStatus, Reading
 
 
@@ -25,7 +26,16 @@ class ReadingRepository(ABC):
         """Mới nhất trước; không gồm reading đã xóa."""
 
     @abstractmethod
-    def update_interpretation(self, reading_id: int, text: str | None, status: AIStatus) -> Reading: ...
+    def update_interpretation(
+        self, reading_id: int, text: str | None, status: AIStatus, prompt_version: str | None = None
+    ) -> Reading: ...
+
+    @abstractmethod
+    def list_interpreted(self) -> list[RatingRow]:
+        """Mọi reading đã có lời giải (DONE), chưa xóa, của tất cả người dùng: dữ liệu cho thống kê độ đúng."""
+
+    @abstractmethod
+    def update_accuracy(self, reading_id: int, accuracy: int) -> Reading: ...
 
     @abstractmethod
     def delete(self, reading_id: int) -> None:

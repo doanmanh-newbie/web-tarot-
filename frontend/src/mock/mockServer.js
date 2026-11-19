@@ -89,6 +89,7 @@ function toResponse(r) {
     created_at: r.created_at,
     ai_status: r.ai_status,
     ai_interpretation: r.ai_interpretation,
+    accuracy: r.accuracy ?? null,
     cards: r.cards.map((rc, i) => {
       const c = card(db, rc.card_id);
       return {
@@ -167,7 +168,9 @@ function handle(method, path, body) {
         ai_interpretation: null,
         cards: drawCards(spread.card_count),
       };
-      r.ai_interpretation = interpret(db, r);
+      // interpret=false: trả lá ngay, lời giải lấy sau qua /interpret (giống backend)
+      if (params.get("interpret") === "false") r.ai_status = "pending";
+      else r.ai_interpretation = interpret(db, r);
       db.readings.push(r);
       save();
       return toResponse(r);
@@ -188,10 +191,51 @@ function handle(method, path, body) {
       }
       return toResponse(r);
     }
+    case "PUT /readings/:id/rating": {
+      const r = findReading(id);
+      const a = Number(body.accuracy);
+      if (!Number.isInteger(a) || a < 0 || a > 100) fail(422, "Mức đúng phải từ 0 đến 100%");
+      if (r.ai_status !== "done") fail(422, "Lần bốc này chưa có lời giải để đánh giá");
+      r.accuracy = a;
+      save();
+      return toResponse(r);
+    }
     case "GET /cards": {
       const limit = Number(params.get("limit") ?? 12);
       const offset = Number(params.get("offset") ?? 0);
       return baseCards.slice(offset, offset + limit).map((c) => card(db, c.id));
+    }
+    case "GET /admin/stats/accuracy": {
+      const days = Number(params.get("days") ?? 30);
+      const done = db.readings.filter((r) => r.ai_status === "done");
+      const rated = done.filter((r) => r.accuracy != null);
+      const avg = (xs) => (xs.length ? Math.round((xs.reduce((a, b) => a + b, 0) / xs.length) * 10) / 10 : null);
+      const group = (key) => {
+        const m = {};
+        rated.forEach((r) => (m[key(r)] ??= []).push(r.accuracy));
+        return Object.entries(m).map(([name, xs]) => ({ name, rated: xs.length, average: avg(xs) })).sort((a, b) => b.rated - a.rated);
+      };
+      const part = (r, re, none) => (r.question.match(re)?.[1] ?? none).replace(/^./, (c) => c.toUpperCase());
+      const ymd = (d) => d.toLocaleDateString("sv");
+      const by_day = Array.from({ length: days }, (_, i) => {
+        const d = new Date();
+        d.setDate(d.getDate() - (days - 1 - i));
+        const xs = rated.filter((r) => ymd(new Date(r.created_at)) === ymd(d)).map((r) => r.accuracy);
+        return { day: ymd(d), rated: xs.length, average: avg(xs) };
+      });
+      const buckets = [["0–19%", 0, 19], ["20–39%", 20, 39], ["40–59%", 40, 59], ["60–79%", 60, 79], ["80–100%", 80, 100]];
+      return {
+        interpreted: done.length,
+        rated: rated.length,
+        rating_rate: done.length ? Math.round((rated.length * 1000) / done.length) / 10 : 0,
+        average: avg(rated.map((r) => r.accuracy)),
+        buckets: buckets.map(([name, lo, hi]) => ({ name, rated: rated.filter((r) => r.accuracy >= lo && r.accuracy <= hi).length, average: null })),
+        by_spread: group((r) => spreads[r.spread_id - 1].name),
+        by_topic: group((r) => part(r, /Chủ đề ([^:]+):/, "chung")),
+        by_persona: group((r) => part(r, /^Tôi là ([^.]+)\./, "không nói rõ")),
+        by_version: [{ name: "mock", rated: rated.length, average: avg(rated.map((r) => r.accuracy)) }],
+        by_day,
+      };
     }
     case "GET /admin/cards":
       return baseCards.map((c) => card(db, c.id));

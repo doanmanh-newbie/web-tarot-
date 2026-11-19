@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import Boolean, DateTime, ForeignKey, Index, Integer, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, DateTime, ForeignKey, Index, Integer, SmallInteger, String, Text, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.shared.infrastructure.db.base import Base
@@ -18,6 +18,8 @@ class ReadingModel(Base):
     ai_status: Mapped[str] = mapped_column(String(10), default="pending", server_default="pending")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
     deleted_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    prompt_version: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    accuracy: Mapped[int | None] = mapped_column(SmallInteger, nullable=True)  # % người dùng tự chấm, 0-100
 
     cards: Mapped[list["ReadingCardModel"]] = relationship(
         back_populates="reading",

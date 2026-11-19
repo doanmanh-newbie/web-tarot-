@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { listSpreads } from "../api/spreads.js";
 import BrowseSection from "./BrowseSection.jsx";
@@ -17,6 +17,9 @@ const fadeUp = {
   transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
 };
 
+const STATS = [["78", "lá bài"], ["22", "Ẩn Chính"], ["56", "Ẩn Phụ"], ["3", "kiểu trải"]];
+const LINKS = [["bo-bai", "Bộ bài"], ["boc-bai", "Bốc bài"], ["kieu-trai", "Kiểu trải bài"], ["hoi-dap", "Hỏi đáp"]];
+
 const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
 function Hero() {
@@ -32,10 +35,20 @@ function Hero() {
         <p className="hero-sub">Lướt bộ bài cổ điển như lướt bộ sưu tập, rồi đặt câu hỏi và để vòng bài chọn cho bạn vài lá.</p>
         <div className="hero-cta">
           <button className="btn btn-lg" onClick={() => scrollTo("boc-bai")}>✦ Bốc bài ngay</button>
-          <button className="btn-ghost" onClick={() => scrollTo("bo-bai")}>Lướt bộ bài</button>
+          <Link className="btn-ghost" to="/hoi-bai">Hỏi Ngay</Link>
         </div>
+        <dl className="hero-stats">
+          {STATS.map(([n, label]) => (
+            <div key={label}>
+              <dt>{n}</dt>
+              <dd>{label}</dd>
+            </div>
+          ))}
+        </dl>
       </motion.div>
       <motion.div className="hero-card" initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.1, delay: 0.2 }}>
+        <img className="hero-ghost l" src="/cards/the-moon.webp" alt="" aria-hidden="true" />
+        <img className="hero-ghost r" src="/cards/the-sun.webp" alt="" aria-hidden="true" />
         <Suspense fallback={null}>
           <CardModel3D card={HERO_CARD} className="hero-canvas" />
         </Suspense>
@@ -56,7 +69,7 @@ function SpreadsGuide() {
   return (
     <section id="kieu-trai" className="section guide">
       <motion.header className="browse-head" {...fadeUp}>
-        <p className="eyebrow">Ba cách đặt câu hỏi</p>
+        <p className="eyebrow">Các cách đặt câu hỏi</p>
         <h2 className="section-title">Kiểu trải bài</h2>
       </motion.header>
       <div className="guide-grid">
@@ -74,8 +87,35 @@ function SpreadsGuide() {
         ))}
       </div>
       <motion.div className="row-center" {...fadeUp}>
-        <button className="btn" onClick={() => scrollTo("boc-bai")}>✦ Thử bốc một lượt</button>
+        <Link className="btn" to="/hoi-bai">✦ Hỏi Ngay</Link>
       </motion.div>
+    </section>
+  );
+}
+
+const FAQ = [
+  ["Bói bài ở đây có mất phí không?", "Không. Lướt bộ bài, bốc lá theo ngày/tuần/tháng/năm và Yes/No dùng thoải mái. Hỏi bài có lời giải AI giới hạn số lượt mỗi ngày, xem ở nhãn lượt còn lại."],
+  ["Nên đặt câu hỏi như thế nào?", "Câu hỏi mở thường cho lời giải hữu ích hơn, ví dụ “Mình nên làm gì để cải thiện…” thay vì “Có phải…”. Câu hỏi Có/Không hãy dùng tab Yes/No ở mục Bốc bài."],
+  ["Lá ngược có phải điềm xấu?", "Không hẳn. Lá ngược thường chỉ năng lượng bị chặn, chậm lại hoặc hướng vào trong. Mở chi tiết lá để đọc cả nghĩa xuôi lẫn ngược theo từng chủ đề."],
+  ["Lời giải chính xác đến mức nào?", "Tarot là công cụ suy ngẫm, không phải lời tiên đoán. Lời giải AI dựa trên ý nghĩa gốc của các lá bạn bốc, hãy xem nó như một góc nhìn để tham khảo."],
+  ["Lịch sử bốc bài lưu ở đâu?", "Các lần bốc có lời giải được lưu trong tài khoản, xem lại ở tab Lịch sử. Lá hôm nay và các lá đã thích chỉ lưu trên thiết bị này."],
+];
+
+function FaqSection() {
+  return (
+    <section id="hoi-dap" className="section faq">
+      <motion.header className="browse-head" {...fadeUp}>
+        <p className="eyebrow">Hỏi đáp</p>
+        <h2 className="section-title">Câu hỏi thường gặp</h2>
+      </motion.header>
+      <div className="faq-list">
+        {FAQ.map(([q, a]) => (
+          <details key={q}>
+            <summary>{q}</summary>
+            <p className="muted">{a}</p>
+          </details>
+        ))}
+      </div>
     </section>
   );
 }
@@ -98,10 +138,25 @@ export default function HomePage() {
       <BrowseSection />
       <DrawSection />
       <SpreadsGuide />
+      <FaqSection />
       <footer className="site-footer">
-        <p className="brand-mark">✦ Tarot</p>
-        <p className="muted small">Nội dung chỉ mang tính giải trí và tham khảo, không thay thế lời khuyên của chuyên gia.</p>
-        <p className="muted small">Hình lá bài: bộ Rider–Waite–Smith (1909), phạm vi công cộng.</p>
+        <div>
+          <p className="brand-mark">✦ Tarot</p>
+          <p className="muted small">Lướt bộ bài 3D, bốc bài có lời giải AI, rút nhanh lá hôm nay và Yes/No.</p>
+        </div>
+        <nav aria-label="Các mục trên trang">
+          <h3>Khám phá</h3>
+          <ul>
+            {LINKS.map(([id, label]) => (
+              <li key={id}><a href={`#${id}`} onClick={(e) => (e.preventDefault(), scrollTo(id))}>{label}</a></li>
+            ))}
+          </ul>
+        </nav>
+        <div>
+          <h3>Lưu ý</h3>
+          <p className="muted small">Nội dung chỉ mang tính giải trí và tham khảo, không thay thế lời khuyên của chuyên gia.</p>
+          <p className="muted small">Hình lá bài: bộ Rider–Waite–Smith (1909), phạm vi công cộng.</p>
+        </div>
       </footer>
     </div>
   );

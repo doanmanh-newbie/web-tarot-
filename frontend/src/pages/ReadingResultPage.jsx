@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { getReading, reinterpret } from "../api/readings.js";
 import DrawnRail from "../components/DrawnRail.jsx";
+import Interpretation from "../components/Interpretation.jsx";
+import AccuracyRating from "../components/AccuracyRating.jsx";
 import LoadingState from "../components/LoadingState.jsx";
 import ErrorMessage from "../components/ErrorMessage.jsx";
 
@@ -42,7 +44,7 @@ export default function ReadingResultPage() {
           <h1>{reading.spread.name}</h1>
           <p className="muted small">{new Date(reading.created_at).toLocaleString("vi-VN")}</p>
         </div>
-        <Link className="btn-ghost" to="/#boc-bai">Bốc lượt mới</Link>
+        <Link className="btn-ghost" to="/hoi-bai">Hỏi câu khác</Link>
       </div>
       <blockquote className="question">“{reading.question}”</blockquote>
 
@@ -53,7 +55,10 @@ export default function ReadingResultPage() {
         {retrying ? (
           <LoadingState text="Đang diễn giải lại..." />
         ) : reading.ai_status === "done" ? (
-          <div className="pre-wrap">{reading.ai_interpretation}</div>
+          <>
+            <Interpretation text={reading.ai_interpretation} />
+            <AccuracyRating reading={reading} onRated={setReading} />
+          </>
         ) : (
           <div>
             <p className="muted">Chưa có lời diễn giải (AI đang bận hoặc gặp lỗi). Thử lại không tốn thêm lượt.</p>

@@ -20,7 +20,9 @@ class DrawReading:
       1. Kiểm tra đầu vào (câu hỏi, kiểu trải bài) TRƯỚC khi đụng tới quota, nên lỗi đầu vào không mất lượt.
       2. Bốc bài ở server (không tin client).
       3. Lưu reading kèm kiểm tra quota trong MỘT bước nguyên tử (repository lo), chống bấm đồng thời để lách giới hạn.
-      4. SAU KHI đã lưu mới gọi AI. AI lỗi thì bài vẫn còn, reading ở trạng thái FAILED để "Giải lại",
+      4. SAU KHI đã lưu mới gọi AI. interpret=False: trả lá ngay (PENDING) để client lật lá cho người dùng
+         xem rồi mới gọi /interpret, thay vì bắt người dùng nhìn màn hình chờ AI trước khi thấy lá.
+         AI lỗi thì bài vẫn còn, reading ở trạng thái FAILED để "Giải lại",
          và lượt đã tính (người dùng đã thực sự rút bài). Không bốc lại, không mất lượt oan.
     """
 
@@ -44,7 +46,9 @@ class DrawReading:
         self._quota = quota
         self._max_question_length = max_question_length
 
-    def execute(self, user_id: int, spread_id: int, question: str, unlimited: bool = False) -> ReadingDetails:
+    def execute(
+        self, user_id: int, spread_id: int, question: str, unlimited: bool = False, interpret: bool = True
+    ) -> ReadingDetails:
         question = clean_question(question, self._max_question_length)
         spread = self._spreads.get_by_id(spread_id)
         if spread is None:
@@ -69,4 +73,4 @@ class DrawReading:
         if saved is None:
             raise DailyQuotaExceeded(f"Đã dùng hết {self._quota.daily_limit} lượt hôm nay")
 
-        return self._interpret.execute(saved.id, user_id)
+        return self._interpret.execute(saved.id, user_id) if interpret else self._interpret.describe(saved)

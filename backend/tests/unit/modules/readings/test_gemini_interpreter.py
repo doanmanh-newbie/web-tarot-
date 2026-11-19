@@ -57,6 +57,50 @@ def test_empty_or_blocked_answer_is_a_failure(text):
         gem.interpret("q", "Một lá", CARDS)
 
 
+class ApiError(Exception):
+    def __init__(self, code):
+        super().__init__(f"lỗi {code}")
+        self.code = code
+
+
+class PerModel:
+    """Mỗi model trả về lỗi hoặc văn bản riêng; ghi lại thứ tự model đã gọi."""
+
+    def __init__(self, outcomes):
+        self.outcomes, self.calls = outcomes, []
+
+    def generate_content(self, model, **_):
+        self.calls.append(model)
+        out = self.outcomes[model]
+        if isinstance(out, Exception):
+            raise out
+        return SimpleNamespace(text=out)
+
+
+def fallback(outcomes):
+    models = PerModel(outcomes)
+    return GeminiInterpreter(SimpleNamespace(models=models), "chinh", 20, 512, ("du-phong-1", "du-phong-2")), models
+
+
+def test_overloaded_model_falls_back_to_next():
+    gem, models = fallback({"chinh": ApiError(503), "du-phong-1": ApiError(504), "du-phong-2": "Diễn giải"})
+    assert gem.interpret("q", "Một lá", CARDS) == "Diễn giải"
+    assert models.calls == ["chinh", "du-phong-1", "du-phong-2"]
+
+
+def test_non_retryable_error_does_not_try_fallbacks():
+    gem, models = fallback({"chinh": ApiError(400), "du-phong-1": "x", "du-phong-2": "x"})
+    with pytest.raises(InterpretationFailed):
+        gem.interpret("q", "Một lá", CARDS)
+    assert models.calls == ["chinh"]
+
+
+def test_all_models_overloaded_is_a_failure():
+    gem, _ = fallback({"chinh": ApiError(503), "du-phong-1": ApiError(503), "du-phong-2": ApiError(429)})
+    with pytest.raises(InterpretationFailed):
+        gem.interpret("q", "Một lá", CARDS)
+
+
 def test_unconfigured_interpreter_fails_cleanly():
     with pytest.raises(InterpretationFailed):
         UnconfiguredInterpreter().interpret("q", "Một lá", CARDS)

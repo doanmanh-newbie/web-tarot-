@@ -21,6 +21,16 @@ def test_draw_gives_one_card_per_position_and_interprets():
     assert d.reading.id is not None and d.reading.user_id == USER
 
 
+def test_draw_without_interpret_returns_cards_first_and_ai_runs_later():
+    env = make_env()
+    d = env.draw.execute(USER, 1, "Công việc sắp tới thế nào?", interpret=False)
+    assert len(d.cards) == 3 and d.reading.ai_status is AIStatus.PENDING
+    assert env.ai.calls == []                                   # chưa gọi AI
+    later = env.interpret.execute(d.reading.id, USER)
+    assert later.reading.ai_status is AIStatus.DONE and len(env.ai.calls) == 1
+    assert env.quota.execute(USER).used == 1                    # giải sau không tính thêm lượt
+
+
 def test_question_is_cleaned_before_saving():
     env = make_env()
     assert env.draw.execute(USER, 1, "  hỏi   gì đó  ").reading.question == "hỏi gì đó"
@@ -130,3 +140,25 @@ def test_retry_after_ai_failure_costs_no_extra_quota_and_keeps_same_cards():
     assert retried.reading.ai_status is AIStatus.DONE
     assert [(c.card.id, c.is_reversed) for c in retried.cards] == [(c.card.id, c.is_reversed) for c in failed.cards]
     assert env.quota.execute(USER).used == 1
+
+
+def test_ai_receives_keywords_and_topic_meaning_and_version_is_saved():
+    env = make_env()
+    details = {
+        "keywords_upright": ["Khởi đầu", "Tự do"], "keywords_reversed": ["Do dự"],
+        "love": {"upright": "Yêu mới", "reversed": "Sợ cam kết"},
+    }
+    for c in env.cards.get_by_ids([1, 2, 3]):
+        c.details = details
+    env.ai.version = "vTest"
+    d = env.draw.execute(USER, 1, "Tôi là sinh viên. Chủ đề tình cảm: có người yêu không?")
+    cards = env.ai.calls[0].cards
+    assert [c.keywords for c in cards] == ["Khởi đầu, Tự do", "Do dự", "Khởi đầu, Tự do"]
+    assert [c.topic_meaning for c in cards] == ["Yêu mới", "Sợ cam kết", "Yêu mới"]
+    assert d.reading.prompt_version == "vTest"
+
+
+def test_no_topic_means_no_topic_meaning():
+    env = make_env()
+    env.draw.execute(USER, 1, "Tuần này thế nào?")
+    assert all(c.topic_meaning == "" and c.keywords == "" for c in env.ai.calls[0].cards)
